@@ -1,0 +1,21 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+jobs:
+  build-and-deploy:
+    runs-on: [self-hosted]
+
+    steps:
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+      - uses: actions/checkout@v2
+
+      - name: Copy .env file
+        run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
+
+      - name: Run react build script
+        run: pnpm install && pnpm build
