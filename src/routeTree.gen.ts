@@ -16,15 +16,15 @@ import { Route as rootRoute } from './routes/__root'
 
 // Create Virtual Routes
 
-const EventsLazyImport = createFileRoute('/events')()
+const SessionsLazyImport = createFileRoute('/sessions')()
 const IndexLazyImport = createFileRoute('/')()
 
 // Create/Update Routes
 
-const EventsLazyRoute = EventsLazyImport.update({
-  path: '/events',
+const SessionsLazyRoute = SessionsLazyImport.update({
+  path: '/sessions',
   getParentRoute: () => rootRoute,
-} as any).lazy(() => import('./routes/events.lazy').then((d) => d.Route))
+} as any).lazy(() => import('./routes/sessions.lazy').then((d) => d.Route))
 
 const IndexLazyRoute = IndexLazyImport.update({
   path: '/',
@@ -42,11 +42,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexLazyImport
       parentRoute: typeof rootRoute
     }
-    '/events': {
-      id: '/events'
-      path: '/events'
-      fullPath: '/events'
-      preLoaderRoute: typeof EventsLazyImport
+    '/sessions': {
+      id: '/sessions'
+      path: '/sessions'
+      fullPath: '/sessions'
+      preLoaderRoute: typeof SessionsLazyImport
       parentRoute: typeof rootRoute
     }
   }
@@ -56,37 +56,37 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
-  '/events': typeof EventsLazyRoute
+  '/sessions': typeof SessionsLazyRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
-  '/events': typeof EventsLazyRoute
+  '/sessions': typeof SessionsLazyRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexLazyRoute
-  '/events': typeof EventsLazyRoute
+  '/sessions': typeof SessionsLazyRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/events'
+  fullPaths: '/' | '/sessions'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/events'
-  id: '__root__' | '/' | '/events'
+  to: '/' | '/sessions'
+  id: '__root__' | '/' | '/sessions'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
-  EventsLazyRoute: typeof EventsLazyRoute
+  SessionsLazyRoute: typeof SessionsLazyRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
-  EventsLazyRoute: EventsLazyRoute,
+  SessionsLazyRoute: SessionsLazyRoute,
 }
 
 export const routeTree = rootRoute
@@ -102,14 +102,14 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/events"
+        "/sessions"
       ]
     },
     "/": {
       "filePath": "index.lazy.tsx"
     },
-    "/events": {
-      "filePath": "events.lazy.tsx"
+    "/sessions": {
+      "filePath": "sessions.lazy.tsx"
     }
   }
 }
