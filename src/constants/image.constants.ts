@@ -3,5 +3,7 @@ export class ImageConstants {
 
   public static readonly SESSIONS = {
     DataScienceRoadmap: `${this.ASSET_BASE_URL}/images/sessions/DataScience.png`,
+    trpcSession: `${this.ASSET_BASE_URL}/images/sessions/TRPC JS.png.png`,
+    AWSCertificationRoadmap: `${this.ASSET_BASE_URL}/images/sessions/roadmapAWSCertification.png`,
   };
 }
