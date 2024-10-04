@@ -7,7 +7,7 @@ export default [
     date: "2nd October 2024",
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS.DataScienceRoadmap,
-    videoURL: "",
+    videoURL: "https://youtu.be/tcMPE5ljELk",
   },
   {
     title: "Roadmap of AWS Certification",
@@ -25,7 +25,7 @@ export default [
   },
   {
     title: "Journey to Go Lang",
-    instrcutor: "Mukesh Kumar Chaudhary",
+    instructor: "Mukesh Kumar Chaudhary",
     date: "28th April 2024",
     flyer: ImageConstants.SESSIONS.GoLang,
     videoURL: "https://youtu.be/DVvspkGdxFo",
