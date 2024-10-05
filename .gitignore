@@ -12,6 +12,7 @@ dist
 build
 dist-ssr
 *.local
+pnpm-lock.yaml
 
 # Editor directories and files
 .vscode/*

@@ -18,3 +18,7 @@ pnpm install && pnpm start:dev
 
 Contribution are welcome. 🚀
 ``We are taking PR on `develop` branch only.``
+
+#### Todo:
+
+[ x ] To add Sticky Discord banner of EverydayKarma on Homepage.

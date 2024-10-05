@@ -1,10 +1,9 @@
-import "./App.css";
 import { Button } from "./ui/shadcn/button";
 
 function App() {
   return (
     <>
-      <Button>Hello world !</Button>
+      <Button className="first-letter:text-red-300">Hello world !</Button>
     </>
   );
 }
