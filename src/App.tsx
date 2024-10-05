@@ -1,9 +1,7 @@
-import { Button } from "./ui/shadcn/button";
-
 function App() {
   return (
     <>
-      <Button className="first-letter:text-red-300">Hello world !</Button>
+      <h1 className="text-5xl text-center py-16">Homepage</h1>
     </>
   );
 }
