@@ -12,23 +12,26 @@ import { Link } from "@tanstack/react-router";
 export interface SessionType {
   title: string;
   instructor: string;
-  date: string;
+  date?: string;
   time?: string;
-  flyer: string;
+  flyer?: string;
   videoURL?: string;
+  isUpcoming: boolean;
 }
 
 export default function SessionCard({ session }: { session: SessionType }) {
   return (
     <Card key={session.title} className="flex flex-col h-full">
       <CardHeader className="p-0">
-        <div className="relative h-48 w-full">
-          <img
-            src={session.flyer}
-            alt={session.title}
-            className="rounded-t-lg object-cover w-full h-full"
-          />
-        </div>
+        {session.flyer && (
+          <div className="relative rounded-t-lg overflow-hidden max-sm:bg-everydaykarma max-sm:h-50 h-52 max-md:h-96 w-full">
+            <img
+              src={session.flyer}
+              alt={session.title}
+              className="object-cover object-top max-sm:object-contain max-sm:object-center w-full h-full"
+            />
+          </div>
+        )}
       </CardHeader>
       <CardContent className="flex-grow p-4">
         <CardTitle className="text-xl mb-2">{session.title}</CardTitle>
@@ -39,20 +42,25 @@ export default function SessionCard({ session }: { session: SessionType }) {
           </p>
           <p className="flex items-center">
             <Calendar className="mr-2 h-4 w-4" />
-            {session.date}
+            {session.date || "TBD"}
           </p>
           <p className="flex items-center">
             <Clock className="mr-2 h-4 w-4" />
-            {session.time}
+            {session.time || "N/A"}
           </p>
         </div>
       </CardContent>
       <CardFooter>
         {session.videoURL && (
-          <Button asChild className="w-full">
+          <Button
+            asChild
+            size={"lg"}
+            className="w-full"
+            variant={session.isUpcoming ? "ghost" : "default"}
+          >
             <Link to={session.videoURL}>
               <Video className="mr-2 h-4 w-4" />
-              Watch recorded session
+              {!session.isUpcoming ? "Watch recorded session" : "Coming soon"}
             </Link>
           </Button>
         )}

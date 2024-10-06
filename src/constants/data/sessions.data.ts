@@ -51,7 +51,7 @@ export default [
   {
     title: "Getting Started with Ruby",
     instructor: "Nirjal Dhakal",
-    date: "TBD",
+    date: undefined,
     time: undefined,
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
@@ -60,7 +60,7 @@ export default [
   {
     title: "Roadmap on Web Security",
     instructor: "Bikram Kharal",
-    date: "TBD",
+    date: undefined,
     time: undefined,
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
@@ -69,7 +69,7 @@ export default [
   {
     title: "Roadmap on AI/ML",
     instructor: "Rikesh Silwal",
-    date: "TBD",
+    date: undefined,
     time: undefined,
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
@@ -78,7 +78,7 @@ export default [
   {
     title: "Something related to DevOps",
     instructor: "Roshan Sahani",
-    date: "TBD",
+    date: undefined,
     time: undefined,
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
