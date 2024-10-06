@@ -1,75 +1,48 @@
 import headerLogo from "@/assets/logos/WHITELOGO_transparent@3x.png";
 import { DesktopNavbar } from "../molecules/Navbar";
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { NavLinkType } from "../atoms/NavLink";
-import { useState } from "react";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 export default function Header() {
-  const [navLinks, setNavLinks] = useState<NavLinkType[]>([
+  const pathName = useLocation().pathname;
+  const current = false;
+  const navLinks: NavLinkType[] = [
     {
       to: "/",
       title: "Home",
-      current: true,
+      current,
     },
     {
-      to: "/",
+      to: "https://learn.everydaykarmaa.com",
       title: "Learn",
-      current: false,
+      current,
     },
     {
       to: "/sessions",
       title: "Sessions",
-      current: false,
+      current,
     },
     {
-      to: "/",
+      to: "/links",
       title: "Links",
-      current: false,
+      current,
     },
-  ]);
+  ];
 
-  function handleLogoClick() {
-    setNavLinks((prevNavLinks) => {
-      return prevNavLinks.map((navLink) => {
-        if (navLink.title === "Home") {
-          return {
-            ...navLink,
-            current: true,
-          };
-        } else {
-          return {
-            ...navLink,
-            current: false,
-          };
-        }
-      });
-    });
-  }
-
-  function handleNavLinkClick(currentNavLink: NavLinkType) {
-    setNavLinks((prevNavLinks) => {
-      return prevNavLinks.map((navLink) => {
-        if (navLink.title === currentNavLink.title) {
-          return {
-            ...navLink,
-            current: true,
-          };
-        } else {
-          return {
-            ...navLink,
-            current: false,
-          };
-        }
-      });
-    });
-  }
+  navLinks.forEach((navLinks) => {
+    if (navLinks.to === pathName) {
+      navLinks.current = true;
+    } else {
+      navLinks.current = false;
+    }
+  });
 
   return (
-    <header className="bg-everydaykarma text-white py-4">
+    <header className="bg-everydaykarma text-gray-100 dark:text-foreground py-4">
       <div className="container mx-auto pr-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" onClick={handleLogoClick}>
+        <Link to="/">
           <div className="flex items-center">
             <img
               src={headerLogo}
@@ -81,10 +54,7 @@ export default function Header() {
         </Link>
 
         {/* Navigation */}
-        <DesktopNavbar
-          navLinks={navLinks}
-          handleNavLinkClick={handleNavLinkClick}
-        />
+        <DesktopNavbar navLinks={navLinks} />
         <HamburgerMenuIcon className="size-8 lg:hidden" />
       </div>
     </header>

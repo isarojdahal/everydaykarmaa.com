@@ -8,19 +8,14 @@ export interface NavLinkType {
 
 export interface NavLinkPropsType {
   navLink: NavLinkType;
-  handleNavLinkClick?: (currentNavLink: NavLinkType) => void;
 }
 
-export default function NavLink({
-  navLink,
-  handleNavLinkClick,
-}: NavLinkPropsType) {
+export default function NavLink({ navLink }: NavLinkPropsType) {
   return (
     <li>
       <Link
         to={navLink.to}
-        className={`text-xl ${navLink.current && "font-bold underline underline-offset-8"}`}
-        onClick={() => handleNavLinkClick && handleNavLinkClick(navLink)}
+        className={`text-xl pb-1 ${navLink.current && "font-bold border-b-2"}`}
       >
         {navLink.title}
       </Link>
