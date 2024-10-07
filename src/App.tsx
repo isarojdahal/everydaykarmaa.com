@@ -1,9 +1,9 @@
-import { Button } from "./ui/shadcn/button";
+import Home from "./ui/pages/Home";
 
 function App() {
   return (
     <>
-      <Button className="first-letter:text-red-300">Hello world !</Button>
+      <Home />
     </>
   );
 }

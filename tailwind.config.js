@@ -4,12 +4,18 @@ export default {
   content: ["./src/*", "./src/ui/**/*"],
   theme: {
     extend: {
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        everydaykarma: {
+          DEFAULT: "hsl(var(--everydaykarma))",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
