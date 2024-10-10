@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 export default {
   darkMode: ["class"],
-  content: ["./src/*", "./src/ui/**/*"],
+  content: {
+    files: ["./src/*", "./src/ui/**/*"],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
     extend: {
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
@@ -59,5 +65,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), fluid],
 };
