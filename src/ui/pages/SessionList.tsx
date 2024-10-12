@@ -14,7 +14,7 @@ export function EventsListing({
 }: EventsListingPropsType) {
   return (
     <div>
-      <p className="text-5xl text-everydaykarma font-bold my-16 text-center">
+      <p className="~text-4xl/7xl text-everydaykarma font-bold my-16 text-center">
         {title}
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
