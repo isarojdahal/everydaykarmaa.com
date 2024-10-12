@@ -1,15 +1,27 @@
 /** @type {import('tailwindcss').Config} */
+import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 export default {
   darkMode: ["class"],
-  content: ["./src/*", "./src/ui/**/*"],
+  content: {
+    files: ["./src/*", "./src/ui/**/*"],
+    extract,
+  },
   theme: {
+    screens,
+    fontSize,
     extend: {
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        everydaykarma: {
+          DEFAULT: "hsl(var(--everydaykarma))",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -53,5 +65,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), fluid],
 };
