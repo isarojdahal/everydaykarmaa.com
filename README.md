@@ -15,10 +15,11 @@ pnpm install && pnpm start:dev
 ##### Related Project Repo :
 
 [Assets Repository](https://github.com/isarojdahal/-assets-everydaykarmaa.com) - Contains Images Files and other assets.
+[Learn Repo] (https://github.com/isarojdahal/learn.everydaykarmaa.com) - Contains the learning resources.
 
 Contribution are welcome. 🚀
 ``We are taking PR on `develop` branch only.``
 
 #### Todo:
 
-[ x ] To add Sticky Discord banner of EverydayKarma on Homepage.
+1. To update learn.everydaykarmaa.com with latest video resources and docs (for JavaScript, React, Node, Docker etc.)
