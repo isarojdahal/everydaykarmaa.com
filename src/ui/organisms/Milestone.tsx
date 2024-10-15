@@ -1,4 +1,5 @@
-import { CalendarCheck, Youtube } from "lucide-react";
+import { CalendarCheck } from "lucide-react";
+import { FaYoutube } from "react-icons/fa6";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 import { Button } from "@/ui/shadcn/button";
 
@@ -9,22 +10,24 @@ export default function Milestones() {
       date: "Jan 5, 2022 - Apr 19, 2022",
       duration: "3.5 Months",
       icon: <CalendarCheck className="h-6 w-6" />,
-      youtubeLink: "https://youtu.be/ILDIicJDZsI?si=3RcO0X9o4TWoFjv6",
+      youtubeLink:
+        "https://www.youtube.com/watch?v=ILDIicJDZsI&list=PL4njvVBDLL21Y8t9j5zEcqYvqODz3sH6o&index=1",
     },
     {
       title: "Free Node.js Course",
       date: "May 8, 2022 - May 29, 2022",
       duration: "3 Weeks",
       icon: <CalendarCheck className="h-6 w-6" />,
-
-      youtubeLink: "https://youtu.be/KE9DatgZm9U?si=AhXIwEUWBisw2-9U",
+      youtubeLink:
+        "https://www.youtube.com/watch?v=KE9DatgZm9U&list=PL4njvVBDLL21S6bEXRC7agpBnVPiXNbj5&index=1",
     },
     {
       title: "Free JavaScript Course",
       date: "Sep 18, 2023 - Oct 15, 2023",
       duration: "4 Weeks",
       icon: <CalendarCheck className="h-6 w-6" />,
-      youtubeLink: "https://youtu.be/OAl6_9cSJ_E?si=vHilowo6rXCLcza-",
+      youtubeLink:
+        "https://www.youtube.com/watch?v=OAl6_9cSJ_E&list=PL4njvVBDLL23ldnM1oA0MJmRtbJJdkkah&index=1",
     },
   ];
 
@@ -64,7 +67,7 @@ export default function Milestones() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Youtube className="h-4 w-4" />
+                    <FaYoutube className="h-4 w-4" />
                     Watch Course
                   </a>
                 </Button>
