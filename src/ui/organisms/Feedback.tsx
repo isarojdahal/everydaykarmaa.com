@@ -5,25 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 
 export default function Component() {
   const [showAllFeedback, setShowAllFeedback] = useState(false);
-
-  //   const milestones = [
-  //     {
-  //       title: "Free React.js Course",
-  //       duration: "5th Jan 2022 to 19th April 2022",
-  //       length: "1 Month long",
-  //     },
-  //     {
-  //       title: "Free Node.js Course",
-  //       duration: "May 8 2022 to May 29 2022",
-  //       length: "1 Month long",
-  //     },
-  //     {
-  //       title: "Free JavaScript Course",
-  //       duration: "Sept 18, 2023 to 15 Oct 2023",
-  //       length: "1 Month long",
-  //     },
-  //   ];
-
   const feedbacks = [
     {
       name: "Bardan Nepali",
