@@ -27,7 +27,9 @@ const linksData = [
 
 export function Footer() {
   return (
-    <footer className="relative z-[100] bg-everydaykarma text-gray-100 flex flex-col mt-16">
+
+    <footer className="relative z-[60] bg-everydaykarma text-gray-100 flex flex-col mt-16">
+
       <div className="container mx-auto ~py-6/4 pr-4 flex max-sm:flex-col max-sm:gap-4 items-center justify-between">
         <div className="footer-logo max-sm:hidden">
           <Logo />
