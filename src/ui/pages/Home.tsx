@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet-async";
 import DiscordBanner, {
   DiscordBannerPropType,
@@ -28,6 +29,7 @@ export default function Home() {
         icon={discordData.icon} // Use the icon from discordData
         url={discordData.url} // Use the url from discordData
         text={discordData.text} // Use the text from discordData
+
       />
     </>
   );
