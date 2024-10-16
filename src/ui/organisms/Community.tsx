@@ -32,8 +32,8 @@ const communityData: CommunityCardPropType[] = [
 
 export default function Community() {
   return (
-    <section className="container mx-auto ~py-16/0 px-4">
-      <div className="w-full min-h-screen flex flex-col items-center justify-center gap-16">
+    <section className="container mx-auto ~py-16/0 md:-mt-0 -mt-20  md:h-[65vh] px-4">
+      <div className="w-full  flex flex-col items-center justify-center gap-16">
         <p className="~text-4xl/7xl text-everydaykarma text-center font-bold">
           Connect with our community
         </p>
