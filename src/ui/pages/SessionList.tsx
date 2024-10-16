@@ -1,5 +1,6 @@
 import sessionsData from "@/constants/data/sessions.data";
 import SessionCard, { SessionType } from "../organisms/SessionCard";
+import { Helmet } from "react-helmet-async";
 
 export interface EventsListingPropsType {
   title: string;
@@ -31,19 +32,32 @@ export function EventsListing({
 
 export default function Events() {
   return (
-    <div className="container mx-auto px-4 py-8 space-y-32">
-      {/* Upcoming Events */}
-      <EventsListing
-        title="Upcoming Events"
-        sessionsData={sessionsData}
-        showUpcoming={true}
-      />
-      {/* Past Events */}
-      <EventsListing
-        title="Past Events"
-        sessionsData={sessionsData}
-        showUpcoming={false}
-      />
-    </div>
+    <>
+      <Helmet>
+        <title>EverydayKarma - Sessions</title>
+        <meta
+          name="description"
+          content="Welcome to the Sessions page of EverydayKarma, where you can explore about upcomming Events and pasts Events by EverydayKarma"
+        />
+        <meta
+          name="keywords"
+          content="sessions, roadmaps,TRPC,golang,AWS,Data science,kubernetes , EverydayKarma"
+        />
+      </Helmet>
+      <div className="container mx-auto px-4 py-8 space-y-32">
+        {/* Upcoming Events */}
+        <EventsListing
+          title="Upcoming Events"
+          sessionsData={sessionsData}
+          showUpcoming={true}
+        />
+        {/* Past Events */}
+        <EventsListing
+          title="Past Events"
+          sessionsData={sessionsData}
+          showUpcoming={false}
+        />
+      </div>
+    </>
   );
 }
