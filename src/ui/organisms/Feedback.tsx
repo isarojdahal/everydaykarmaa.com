@@ -4,21 +4,20 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const screenshots = [
-  "/public/feedbacks/feedback-01.png",
-  "/public/feedbacks/feedback-02.png",
-  "/public/feedbacks/feedback-03.png",
-  "/public/feedbacks/feedback-04.png",
-  "/public/feedbacks/feedback-05.jng",
-  "/public/feedbacks/feedback-06.png",
-  "/public/feedbacks/feedback-07.png",
-  "/public/feedbacks/feedback-08.png",
-  "/public/feedbacks/feedback-09.jpg",
-  "/public/feedbacks/feedback-10.png",
-  "/public/feedbacks/feedback-11.png",
-  "/public/feedbacks/feedback-13.png",
-  "/public/feedbacks/feedback-14.png",
-  "/public/feedbacks/feedback-15.png",
-  "/public/feedbacks/feedback-16.png",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-01.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-02.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-03.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-04.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-05.jpg?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-06.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-07.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-08.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-09.jpg?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-10.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-11.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-13.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-14.png?raw=true",
+  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-15.png?raw=true",
 ];
 
 export default function FeedbackSlider() {
