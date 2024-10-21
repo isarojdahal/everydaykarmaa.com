@@ -2,23 +2,7 @@ import { Button } from "@/ui/shadcn/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const screenshots = [
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-01.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-02.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-03.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-04.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-05.jpg?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-06.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-07.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-08.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-09.jpg?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-10.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-11.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-13.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-14.png?raw=true",
-  "https://github.com/isarojdahal/everydaykarmaa.com-assets/blob/main/images/feedbacks/feedback-15.png?raw=true",
-];
+import feedbackData from "@/constants/data/feedback.data"; // Using feedbackData now
 
 export default function FeedbackSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -41,7 +25,7 @@ export default function FeedbackSlider() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const totalSlides = Math.ceil(screenshots.length / itemsPerSlide);
+  const totalSlides = Math.ceil(feedbackData.length / itemsPerSlide);
 
   useEffect(() => {
     if (!isViewingAll) {
@@ -83,15 +67,16 @@ export default function FeedbackSlider() {
             >
               {Array.from({ length: itemsPerSlide }).map((_, offset) => {
                 const index =
-                  (currentIndex * itemsPerSlide + offset) % screenshots.length;
+                  (currentIndex * itemsPerSlide + offset) % feedbackData.length;
+                const feedback = feedbackData[index]; // Get feedback data from the array
                 return (
                   <div
                     key={index}
                     className={`${itemsPerSlide === 1 ? "w-full" : itemsPerSlide === 2 ? "w-1/2" : "w-1/3"}`}
                   >
                     <img
-                      src={screenshots[index]}
-                      alt={`Student feedback screenshot ${index + 1}`}
+                      src={feedback.src} // Use src from feedbackData
+                      alt={feedback.alt} // Use alt from feedbackData
                       className="w-full h-[200px] object-contain rounded-lg shadow-lg"
                     />
                   </div>
@@ -116,11 +101,11 @@ export default function FeedbackSlider() {
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl  mx-auto">
-          {screenshots.map((src, index) => (
+          {feedbackData.map((item, index) => (
             <img
               key={index}
-              src={src}
-              alt={`Student feedback screenshot ${index + 1}`}
+              src={item.src}
+              alt={item.alt}
               className="w-full h-[200px] object-contain rounded-lg shadow-lg"
             />
           ))}
