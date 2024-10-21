@@ -57,8 +57,4 @@ export default [
     src: ImageConstants.FEEDBACKS[15],
     alt: "feed-back image-15",
   },
-  {
-    src: ImageConstants.FEEDBACKS[16],
-    alt: "feed-back image-16",
-  },
 ];

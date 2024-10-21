@@ -23,11 +23,6 @@ export default function Header() {
       title: "Sessions",
       current,
     },
-    {
-      to: "/links",
-      title: "Links",
-      current,
-    },
   ];
 
   navLinks.forEach((navLinks) => {
@@ -39,7 +34,7 @@ export default function Header() {
   });
 
   return (
-    <header className="bg-everydaykarma text-gray-100 dark:text-foreground py-4">
+    <header className="bg-everydaykarma text-gray-100 dark:text-foreground py-2">
       <div className="container mx-auto pr-4 flex items-center justify-between">
         <Logo />
         <DesktopNavbar navLinks={navLinks} />

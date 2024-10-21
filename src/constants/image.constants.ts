@@ -21,20 +21,24 @@ export class ImageConstants {
   };
 
   public static readonly FEEDBACKS = {
-    1: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-01.png?raw=true`,
-    2: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-02.png?raw=true`,
-    3: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-03.png?raw=true`,
-    4: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-04.png?raw=true`,
-    5: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-05.jpg?raw=true`,
-    6: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-06.png?raw=true`,
-    7: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-07.png?raw=true`,
-    8: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-08.png?raw=true`,
-    9: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-09.jpg?raw=true`,
-    10: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-10.png?raw=true`,
-    11: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-11.png?raw=true`,
-    13: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-13.png?raw=true`,
-    14: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-14.png?raw=true`,
-    15: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-15.png?raw=true`,
-    16: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-16.png?raw=true`,
+    1: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-01.png`,
+    2: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-02.png`,
+    3: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-03.png`,
+    4: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-04.png`,
+    5: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-05.png`,
+    6: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-06.png`,
+    7: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-07.png`,
+    8: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-08.png`,
+    9: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-09.png`,
+    10: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-10.png`,
+    11: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-11.png`,
+    13: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-13.png`,
+    14: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-14.png`,
+    15: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-15.png`,
+  };
+
+  public static readonly PARTNERS = {
+    Gracathon2081: `${this.ASSET_BASE_URL}/images/partners/gracathon-2081.png`,
+    SoftwareFreedomDay2024: `${this.ASSET_BASE_URL}/images/partners/software-freedom-day-2024.png`,
   };
 }

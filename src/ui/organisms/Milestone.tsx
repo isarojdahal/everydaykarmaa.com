@@ -2,6 +2,8 @@ import { CalendarCheck } from "lucide-react";
 import { FaYoutube } from "react-icons/fa6";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 import { Button } from "@/ui/shadcn/button";
+import SectionHeading from "../atoms/SectionHeading";
+import PageSection from "../atoms/PageSection";
 
 export default function Milestones() {
   const milestones = [
@@ -32,50 +34,45 @@ export default function Milestones() {
   ];
 
   return (
-    <section className="w-full mt-14 md:mt-20 px-6 md:px-24 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4 md:px-6">
-        <p className="~text-4xl/7xl text-everydaykarma text-center font-bold mb-16">
-          Milestones Achieved
-        </p>
-
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {milestones.map((milestone, index) => (
-            <Card
-              key={index}
-              className="bg-white hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-            >
-              <CardHeader className="flex flex-row items-center gap-4 bg-primary/5 p-4">
-                <div className="p-2 bg-primary rounded-full text-primary-foreground">
-                  {milestone.icon}
-                </div>
-                <CardTitle className="text-lg">{milestone.title}</CardTitle>
-              </CardHeader>
-              <CardContent className="p-4">
-                <p className="text-sm text-muted-foreground mb-2">
-                  {milestone.date}
-                </p>
-                <p className="font-semibold mb-4">
-                  Duration: {milestone.duration}
-                </p>
-                <Button
-                  variant="outline"
-                  className="w-full flex items-center justify-center gap-2 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
-                  asChild
+    <PageSection>
+      <SectionHeading emoji="🚀">Milestones Achieved</SectionHeading>
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {milestones.map((milestone, index) => (
+          <Card
+            key={index}
+            className="bg-white lg:hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+          >
+            <CardHeader className="flex flex-row items-center gap-4 bg-primary/5 p-4">
+              <div className="p-2 bg-primary rounded-full text-primary-foreground">
+                {milestone.icon}
+              </div>
+              <CardTitle className="text-lg">{milestone.title}</CardTitle>
+            </CardHeader>
+            <CardContent className="p-4">
+              <p className="text-sm text-muted-foreground mb-2">
+                {milestone.date}
+              </p>
+              <p className="font-semibold mb-4">
+                Duration: {milestone.duration}
+              </p>
+              <Button
+                variant="outline"
+                className="w-full flex items-center justify-center gap-2 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+                asChild
+              >
+                <a
+                  href={milestone.youtubeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <a
-                    href={milestone.youtubeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaYoutube className="h-4 w-4" />
-                    Watch Course
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+                  <FaYoutube className="h-4 w-4" />
+                  Watch Course
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
+        ))}
       </div>
-    </section>
+    </PageSection>
   );
 }
