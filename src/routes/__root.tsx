@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
+import { NotFound } from "@/ui/pages/NotFound";
 
 export const Route = createRootRoute({
   component: () => (
@@ -7,4 +8,5 @@ export const Route = createRootRoute({
       <Outlet />
     </React.Fragment>
   ),
+  notFoundComponent: NotFound,
 });
