@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import feedbackData from "@/constants/data/feedback.data"; // Using feedbackData now
+import SectionHeading from "../atoms/SectionHeading";
+import PageSection from "../atoms/PageSection";
 
 export default function FeedbackSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,10 +51,8 @@ export default function FeedbackSlider() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 md:my-10">
-      <p className="~text-4xl/7xl text-everydaykarma text-center font-bold mb-16">
-        What our student's have to say?
-      </p>
+    <PageSection>
+      <SectionHeading emoji="📑">Feedbacks from our students</SectionHeading>
 
       {!isViewingAll ? (
         <div className="relative px-2 mx-4 md:px-16 md:mx-10">
@@ -86,14 +86,14 @@ export default function FeedbackSlider() {
           </AnimatePresence>
           <Button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 rounded-full p-2 shadow-lg"
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 hover:text-white rounded-full p-2 shadow-lg"
             aria-label="Previous slide"
           >
             <ChevronLeft className="h-6 w-6" />
           </Button>
           <Button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 rounded-full p-2 shadow-lg"
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-blue-600 hover:text-white rounded-full p-2 shadow-lg"
             aria-label="Next slide"
           >
             <ChevronRight className="h-6 w-6" />
@@ -115,11 +115,11 @@ export default function FeedbackSlider() {
       <div className="mt-8 text-center">
         <Button
           onClick={handleViewAll}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-blue-600 hover:bg-blue-700 text-white text-2xl font-bold py-6 px-8 rounded-full"
         >
           {isViewingAll ? "View Less" : "View All"}
         </Button>
       </div>
-    </div>
+    </PageSection>
   );
 }

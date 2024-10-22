@@ -2,6 +2,8 @@ import { FaDiscord, FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa6";
 import CommunityCard, {
   CommunityCardPropType,
 } from "../molecules/CommunityCard";
+import PageSection from "../atoms/PageSection";
+import SectionHeading from "../atoms/SectionHeading";
 
 const communityData: CommunityCardPropType[] = [
   {
@@ -32,24 +34,19 @@ const communityData: CommunityCardPropType[] = [
 
 export default function Community() {
   return (
-    <section className="container mx-auto ~py-16/0 md:-mt-0 -mt-20  md:h-[65vh] px-4">
-      <div className="w-full  flex flex-col items-center justify-center gap-16">
-        <p className="~text-4xl/7xl text-everydaykarma text-center font-bold">
-          Connect with our community
-        </p>
-
-        <div className="flex items-center justify-center flex-wrap gap-12">
-          {communityData.map((data) => (
-            <CommunityCard
-              key={data.title}
-              title={data.title}
-              memberCount={data.memberCount}
-              icon={data.icon}
-              url={data.url}
-            />
-          ))}
-        </div>
+    <PageSection>
+      <SectionHeading emoji="🌐">Connect with our community</SectionHeading>
+      <div className="flex items-center justify-center flex-wrap gap-12">
+        {communityData.map((data) => (
+          <CommunityCard
+            key={data.title}
+            title={data.title}
+            memberCount={data.memberCount}
+            icon={data.icon}
+            url={data.url}
+          />
+        ))}
       </div>
-    </section>
+    </PageSection>
   );
 }

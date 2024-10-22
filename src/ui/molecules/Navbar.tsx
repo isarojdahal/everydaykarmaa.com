@@ -8,7 +8,7 @@ export interface NavBarPropsType {
 export function DesktopNavbar({ navLinks }: NavBarPropsType) {
   return (
     <nav className="hidden lg:block">
-      <ul className="flex items-center gap-16">
+      <ul className="flex items-center gap-8">
         {navLinks.map((navLink: NavLinkType) => (
           <NavLink key={navLink.title} navLink={navLink} />
         ))}
