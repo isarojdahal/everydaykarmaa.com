@@ -40,5 +40,6 @@ export class ImageConstants {
   public static readonly PARTNERS = {
     Gracathon2081: `${this.ASSET_BASE_URL}/images/partners/gracathon-2081.png`,
     SoftwareFreedomDay2024: `${this.ASSET_BASE_URL}/images/partners/software-freedom-day-2024.png`,
+    drcfs: `${this.ASSET_BASE_URL}/images/partners/DRCFS 2023 March 09.jpg`,
   };
 }
