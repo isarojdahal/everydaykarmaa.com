@@ -21,7 +21,10 @@ export interface SessionType {
 
 export default function SessionCard({ session }: { session: SessionType }) {
   return (
-    <Card key={session.title} className="flex flex-col h-full">
+    <Card
+      key={session.title}
+      className="flex flex-col h-full lg:hover:shadow-lg transition-shadow duration-300"
+    >
       <CardHeader className="p-0">
         {session.flyer && (
           <div className="relative rounded-t-lg overflow-hidden max-sm:bg-everydaykarma max-sm:h-50 h-52 max-md:h-96 w-full">

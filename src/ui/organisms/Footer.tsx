@@ -1,4 +1,10 @@
-import { FaDiscord, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa6";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaGithub,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa6";
 import Logo from "../atoms/Logo";
 
 const currentYear = new Date().getFullYear();
@@ -27,10 +33,8 @@ const linksData = [
 
 export function Footer() {
   return (
-
     <footer className="relative z-[60] bg-everydaykarma text-gray-100 flex flex-col mt-16">
-
-      <div className="container mx-auto ~py-6/4 pr-4 flex max-sm:flex-col max-sm:gap-4 items-center justify-between">
+      <div className="container mx-auto ~py-4/2 pr-4 flex max-sm:flex-col max-sm:gap-4 items-center justify-between">
         <div className="footer-logo max-sm:hidden">
           <Logo />
         </div>
@@ -45,10 +49,16 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div className="bg-blue-800">
+      <div className="bg-blue-800 items-center flex justify-between py-4 pt-0 md:py-0 flex-col md:flex-row relative">
         <p className="container mx-auto text-center py-4 ~text-sm/lg">
           Copyright &copy; {currentYear} EverydayKarma | All rights reserved
         </p>
+        <a href="https://github.com/isarojdahal/everydaykarmaa.com">
+          <p className="flex gap-2 mr-3 md:mr-10 md:absolute right-4 top-1/3 hover:underline underline-offset-2">
+            <FaGithub className="~size-5/6" />
+            <span>contribute</span>
+          </p>
+        </a>
       </div>
     </footer>
   );

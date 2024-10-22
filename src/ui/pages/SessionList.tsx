@@ -1,6 +1,9 @@
 import sessionsData from "@/constants/data/sessions.data";
 import SessionCard, { SessionType } from "../organisms/SessionCard";
 import { Helmet } from "react-helmet-async";
+import Layout from "./Layout";
+import SectionHeading from "../atoms/SectionHeading";
+import PageSection from "../atoms/PageSection";
 
 export interface EventsListingPropsType {
   title: string;
@@ -14,25 +17,23 @@ export function EventsListing({
   showUpcoming,
 }: EventsListingPropsType) {
   return (
-    <div>
-      <p className="~text-4xl/7xl text-everydaykarma font-bold my-16 text-center">
-        {title}
-      </p>
+    <PageSection>
+      <SectionHeading>{title}</SectionHeading>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {sessionsData.map(
           (session) =>
             session.isUpcoming === showUpcoming && (
               <SessionCard key={session.title} session={session} />
-            )
+            ),
         )}
       </div>
-    </div>
+    </PageSection>
   );
 }
 
 export default function Events() {
   return (
-    <>
+    <Layout>
       <Helmet>
         <title>EverydayKarma - Sessions</title>
         <meta
@@ -44,20 +45,19 @@ export default function Events() {
           content="sessions, roadmaps,TRPC,golang,AWS,Data science,kubernetes , EverydayKarma"
         />
       </Helmet>
-      <div className="container mx-auto px-4 py-8 space-y-32">
-        {/* Upcoming Events */}
-        <EventsListing
-          title="Upcoming Events"
-          sessionsData={sessionsData}
-          showUpcoming={true}
-        />
-        {/* Past Events */}
-        <EventsListing
-          title="Past Events"
-          sessionsData={sessionsData}
-          showUpcoming={false}
-        />
-      </div>
-    </>
+
+      {/* Upcoming Events */}
+      <EventsListing
+        title="Our Upcoming Events"
+        sessionsData={sessionsData}
+        showUpcoming={true}
+      />
+      {/* Past Events */}
+      <EventsListing
+        title="Our Past Events"
+        sessionsData={sessionsData}
+        showUpcoming={false}
+      />
+    </Layout>
   );
 }

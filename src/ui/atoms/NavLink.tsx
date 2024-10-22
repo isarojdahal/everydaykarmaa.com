@@ -15,7 +15,7 @@ export default function NavLink({ navLink }: NavLinkPropsType) {
     <li>
       <Link
         to={navLink.to}
-        className={`text-xl pb-1 ${navLink.current && "font-bold border-b-2"}`}
+        className={`text-xl ${navLink.current && "font-bold"} hover:bg-black/25 transition-colors duration-300 py-2 px-4 rounded-lg`}
       >
         {navLink.title}
       </Link>

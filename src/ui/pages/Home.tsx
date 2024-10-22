@@ -1,10 +1,15 @@
-
 import { Helmet } from "react-helmet-async";
 import DiscordBanner, {
   DiscordBannerPropType,
 } from "../molecules/DiscordBanner";
 import Hero from "../organisms/Hero";
 import { FaDiscord } from "react-icons/fa";
+import Layout from "./Layout";
+import Milestones from "../organisms/Milestone";
+import Community from "../organisms/Community";
+import Preloader from "../organisms/Preloader";
+import FeedbackSlider from "../organisms/Feedback";
+import Involvements from "../organisms/Involvements";
 
 const discordData: DiscordBannerPropType = {
   text: "Join our Discord community",
@@ -15,22 +20,30 @@ const discordData: DiscordBannerPropType = {
 export default function Home() {
   return (
     <>
-      <Helmet>
-        <title>EverydayKarma - Home</title>
-        <meta
-          name="description"
-          content="Welcome to the homepage of EverydayKarma, where you can find more about EverydayKarma"
+      <Preloader />
+      <Layout>
+        <Helmet>
+          <title>EverydayKarma - Home</title>
+          <meta
+            name="description"
+            content="Welcome to the homepage of EverydayKarma, where you can find more about EverydayKarma"
+          />
+          <meta
+            name="keywords"
+            content="homepage, discord, linkedin, youtube, facebook, milestones, EverydayKarma"
+          />
+        </Helmet>
+        <Hero />
+        <Milestones />
+        <Community />
+        <FeedbackSlider />
+        <Involvements />
+        <DiscordBanner
+          icon={discordData.icon}
+          url={discordData.url}
+          text={discordData.text}
         />
-        <meta name="keywords" content="homepage, Discord,linkedin,youtube,facebook,milestones, EverydayKarma" />
-      </Helmet>
-
-      <Hero />
-      <DiscordBanner
-        icon={discordData.icon} // Use the icon from discordData
-        url={discordData.url} // Use the url from discordData
-        text={discordData.text} // Use the text from discordData
-
-      />
+      </Layout>
     </>
   );
 }
