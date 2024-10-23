@@ -25,7 +25,7 @@ export class ImageConstants {
     2: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-02.png`,
     3: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-03.png`,
     4: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-04.png`,
-    5: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-05.jpg`,
+    5: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-05.png`,
     6: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-06.png`,
     7: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-07.png`,
     8: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-08.png`,
