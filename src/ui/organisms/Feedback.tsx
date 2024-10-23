@@ -6,6 +6,7 @@ import feedbackData from "@/constants/data/feedback.data"; // Using feedbackData
 import SectionHeading from "../atoms/SectionHeading";
 import PageSection from "../atoms/PageSection";
 import { Link } from "@tanstack/react-router";
+import { ImagePreview } from "../molecules/ImagePreview";
 
 export default function FeedbackSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,6 +49,19 @@ export default function FeedbackSlider() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
   };
 
+  const [previewImage, setPreviewImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  const openPreview = (src: string, alt: string) => {
+    setPreviewImage({ src, alt });
+  };
+
+  const closePreview = () => {
+    setPreviewImage(null);
+  };
+
   return (
     <PageSection>
       <SectionHeading emoji="📑">Feedbacks from our students</SectionHeading>
@@ -70,6 +84,7 @@ export default function FeedbackSlider() {
                 <div
                   key={index}
                   className={`${itemsPerSlide === 1 ? "w-full" : itemsPerSlide === 2 ? "w-1/2" : "w-1/3"}`}
+                  onClick={() => openPreview(feedback.src, feedback.alt)}
                 >
                   <img
                     src={feedback.src} // Use src from feedbackData
@@ -104,6 +119,13 @@ export default function FeedbackSlider() {
           </Button>
         </Link>
       </div>
+      {previewImage && (
+        <ImagePreview
+          src={previewImage.src}
+          alt={previewImage.alt}
+          onClose={closePreview}
+        />
+      )}
     </PageSection>
   );
 }

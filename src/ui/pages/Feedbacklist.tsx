@@ -1,7 +1,21 @@
 import feedbackData from "@/constants/data/feedback.data";
 
 import { ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import { ImagePreview } from "../molecules/ImagePreview";
 export const Feedbacklist = () => {
+  const [previewImage, setPreviewImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  const openPreview = (src: string, alt: string) => {
+    setPreviewImage({ src, alt });
+  };
+
+  const closePreview = () => {
+    setPreviewImage(null);
+  };
   return (
     <>
       <div className="md:mx-28 p-5 top-0 fixed">
@@ -21,9 +35,17 @@ export const Feedbacklist = () => {
             src={item.src}
             alt={item.alt}
             className="w-full h-[200px] object-contain rounded-lg shadow-lg"
+            onClick={() => openPreview(item.src, item.alt)}
           />
         ))}
       </div>
+      {previewImage && (
+        <ImagePreview
+          src={previewImage.src}
+          alt={previewImage.alt}
+          onClose={closePreview}
+        />
+      )}
     </>
   );
 };
