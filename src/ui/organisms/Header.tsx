@@ -1,7 +1,6 @@
-import { DesktopNavbar } from "../molecules/Navbar";
+import { DesktopNavbar, MobileNavbar } from "../molecules/Navbar";
 import { useLocation } from "@tanstack/react-router";
 import { NavLinkType } from "../atoms/NavLink";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Logo from "../atoms/Logo";
 
 export default function Header() {
@@ -38,7 +37,7 @@ export default function Header() {
       <div className="container mx-auto pr-4 flex items-center justify-between">
         <Logo />
         <DesktopNavbar navLinks={navLinks} />
-        <HamburgerMenuIcon className="size-8 lg:hidden" />
+        <MobileNavbar navLinks={navLinks} />
       </div>
     </header>
   );

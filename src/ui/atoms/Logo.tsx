@@ -6,7 +6,7 @@ export default function Logo() {
     <Link to="/">
       <div className="flex items-center">
         <img src={headerLogo} alt="EverydayKarma Logo" className="size-20" />
-        <p className="text-4xl font-bold hidden sm:block">EverydayKarma</p>
+        <p className="text-4xl font-bold max-sm:text-3xl">EverydayKarma</p>
       </div>
     </Link>
   );

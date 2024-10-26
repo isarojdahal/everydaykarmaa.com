@@ -66,7 +66,7 @@ export default function FeedbackSlider() {
     <PageSection>
       <SectionHeading emoji="📑">Feedbacks from our students</SectionHeading>
 
-      <div className="relative px-2 mx-4 md:px-16 md:mx-10">
+      <div className="relative px-2 mx-4 md:px-16 md:mx-10 overflow-x-hidden">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={currentIndex}
