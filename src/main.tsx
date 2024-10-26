@@ -6,6 +6,7 @@ import "./index.css";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 import { HelmetProvider } from "react-helmet-async";
+import Preloader from "./ui/organisms/Preloader";
 
 // Create a new router instance
 const router = createRouter({ routeTree });
@@ -24,8 +25,9 @@ if (!rootElement.innerHTML) {
   root.render(
     <StrictMode>
       <HelmetProvider>
+        <Preloader />
         <RouterProvider router={router} />
       </HelmetProvider>
-    </StrictMode>
+    </StrictMode>,
   );
 }
