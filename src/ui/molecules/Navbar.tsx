@@ -3,6 +3,7 @@ import NavLink, { NavLinkType } from "../atoms/NavLink";
 import {
   Sheet,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -42,13 +43,13 @@ export function MobileNavbar({ navLinks }: NavBarPropsType) {
                 alt="EverydayKarma Logo"
                 className="block mx-auto size-40"
               />
-              <p className="text-white ~text-3xl/6xl font-bold text-center -mt-4">
-                EverydayKarma
-              </p>
             </SheetTitle>
+            <SheetDescription>
+              <span className="sr-only">Mobile Navigation</span>
+            </SheetDescription>
           </SheetHeader>
-          <div className="mt-10">
-            <ul className="flex flex-col items-center gap-8 text-white">
+          <div className="mt-4">
+            <ul className="flex flex-col gap-4 text-white divide-y divide-gray-400 *:pt-4">
               {navLinks.map((navLink: NavLinkType) => (
                 <NavLink key={navLink.title} navLink={navLink} />
               ))}

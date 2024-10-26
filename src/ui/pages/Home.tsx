@@ -7,7 +7,7 @@ import { FaDiscord } from "react-icons/fa";
 import Layout from "./Layout";
 import Milestones from "../organisms/Milestone";
 import Community from "../organisms/Community";
-import Preloader from "../organisms/Preloader";
+// import Preloader from "../organisms/Preloader";
 import FeedbackSlider from "../organisms/Feedback";
 import Involvements from "../organisms/Involvements";
 
@@ -20,7 +20,7 @@ const discordData: DiscordBannerPropType = {
 export default function Home() {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <Layout>
         <Helmet>
           <title>EverydayKarma - Home</title>

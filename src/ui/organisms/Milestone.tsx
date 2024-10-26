@@ -1,5 +1,4 @@
-import { CalendarCheck } from "lucide-react";
-import { FaYoutube } from "react-icons/fa6";
+import { CalendarCheck, Compass } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/ui/shadcn/card";
 import { Button } from "@/ui/shadcn/button";
 import SectionHeading from "../atoms/SectionHeading";
@@ -12,24 +11,21 @@ export default function Milestones() {
       date: "Jan 5, 2022 - Apr 19, 2022",
       duration: "3.5 Months",
       icon: <CalendarCheck className="h-6 w-6" />,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=ILDIicJDZsI&list=PL4njvVBDLL21Y8t9j5zEcqYvqODz3sH6o&index=1",
+      link: "https://learn.everydaykarmaa.com/notes/reactjs/understanding-package-managers-npm.-vs-yarn-intro-to-react-js",
     },
     {
       title: "Free Node.js Course",
       date: "May 8, 2022 - May 29, 2022",
       duration: "3 Weeks",
       icon: <CalendarCheck className="h-6 w-6" />,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=KE9DatgZm9U&list=PL4njvVBDLL21S6bEXRC7agpBnVPiXNbj5&index=1",
+      link: "https://learn.everydaykarmaa.com/notes/nodejs/Introduction/Introduction%20to%20Node.js",
     },
     {
       title: "Free JavaScript Course",
       date: "Sep 18, 2023 - Oct 15, 2023",
       duration: "4 Weeks",
       icon: <CalendarCheck className="h-6 w-6" />,
-      youtubeLink:
-        "https://www.youtube.com/watch?v=OAl6_9cSJ_E&list=PL4njvVBDLL23ldnM1oA0MJmRtbJJdkkah&index=1",
+      link: "https://learn.everydaykarmaa.com/notes/javascript/introduction-to-javascript-history-js-engines-js-programming-paradigms",
     },
   ];
 
@@ -61,12 +57,12 @@ export default function Milestones() {
                 asChild
               >
                 <a
-                  href={milestone.youtubeLink}
+                  href={milestone.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaYoutube className="h-4 w-4" />
-                  Watch Course
+                  <Compass className="size-5" />
+                  Explore Course
                 </a>
               </Button>
             </CardContent>
