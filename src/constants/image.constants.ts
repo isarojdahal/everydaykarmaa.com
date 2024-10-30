@@ -2,11 +2,16 @@ export class ImageConstants {
   private static readonly ASSET_BASE_URL = import.meta.env.VITE_ASSET_BASE_URL;
 
   public static readonly SESSIONS = {
-    DataScienceRoadmap: `${this.ASSET_BASE_URL}/images/sessions/DataScience.png`,
-    trpcSession: `${this.ASSET_BASE_URL}/images/sessions/TRPC_JS.png`,
-    KubernetesSession: `${this.ASSET_BASE_URL}/images/sessions/GettingStartedK8.png`,
-    AWSCertificationRoadmap: `${this.ASSET_BASE_URL}/images/sessions/roadmapAWSCertification.png`,
-    GoLang: `${this.ASSET_BASE_URL}/images/sessions/JourneyToGoLang.png`,
+    2025: {},
+    2024: {
+      DevOpsRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DevOpsRoadmap.png`,
+      AIMLRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/AIML Roadmap.png`,
+      DataScienceRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DataScience.png`,
+      trpcSession: `${this.ASSET_BASE_URL}/images/sessions/flyers/TRPC_JS.png`,
+      KubernetesSession: `${this.ASSET_BASE_URL}/images/sessions/flyers/GettingStartedK8.png`,
+      AWSCertificationRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/roadmapAWSCertification.png`,
+      GoLang: `${this.ASSET_BASE_URL}/images/sessions/flyers/JourneyToGoLang.png`,
+    },
   };
 
   public static readonly HERO_BG = `${this.ASSET_BASE_URL}/images/hero/hero-bg.jpg`;
