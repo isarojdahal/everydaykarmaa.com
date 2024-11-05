@@ -85,7 +85,7 @@ export default [
     date: "2024 Oct 28",
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].DevOpsRoadmap,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
+    videoURL: "https://youtu.be/8BLP-nG2SQU",
     isUpcoming,
   },
   {
@@ -93,10 +93,20 @@ export default [
     instructor: "Nirjal Dhakal",
     date: "2024 Nov 1",
     time: "7pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].ExploringRust,
+    videoURL: "https://youtu.be/qMBWu99emrs",
+    isUpcoming,
+  },
+  {
+    title: "Learn laravel with Todo (Fullstack Project)",
+    instructor: "Vedant Thakur",
+    date: undefined,
+    time: "7pm onwards",
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
     isUpcoming: true,
   },
+
   {
     title: "How to Freelance, Tips and Advices",
     instructor: "-",
