@@ -4,6 +4,7 @@ export class ImageConstants {
   public static readonly SESSIONS = {
     2025: {},
     2024: {
+      ExploringRust: `${this.ASSET_BASE_URL}/images/sessions/flyers/Exploring_Rust_Abhiyan_Dhakal.png`,
       DevOpsRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DevOpsRoadmap.png`,
       AIMLRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/AIML Roadmap.png`,
       DataScienceRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DataScience.png`,
