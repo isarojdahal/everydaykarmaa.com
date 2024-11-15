@@ -41,6 +41,8 @@ export class ImageConstants {
     13: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-13.png`,
     14: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-14.png`,
     15: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-15.png`,
+    16: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-16.png`,
+    17: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-17.png`,
   };
 
   public static readonly PARTNERS = {
