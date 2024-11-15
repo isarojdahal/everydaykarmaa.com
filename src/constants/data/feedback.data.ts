@@ -1,6 +1,7 @@
+import { shuffleArray } from "@/utils/array.util";
 import { ImageConstants } from "../image.constants";
 
-export default [
+const feedbacks = [
   {
     src: ImageConstants.FEEDBACKS[1],
     alt: "feed-back image-1",
@@ -57,4 +58,14 @@ export default [
     src: ImageConstants.FEEDBACKS[15],
     alt: "feed-back image-15",
   },
+  {
+    src: ImageConstants.FEEDBACKS[16],
+    alt: "feed-back image-16",
+  },
+  {
+    src: ImageConstants.FEEDBACKS[17],
+    alt: "feed-back image-17",
+  },
 ];
+
+export default shuffleArray([...feedbacks]); // Use spread to avoid mutating the original array
