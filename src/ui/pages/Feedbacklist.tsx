@@ -29,7 +29,7 @@ export const Feedbacklist = () => {
       </div>
 
       <div className="mt-24 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl  md:mx-auto mx-10">
-        {feedbackData.map((item, index) => (
+        {feedbackData.map((item: any, index: number) => (
           <img
             key={index}
             src={item.src}
