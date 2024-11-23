@@ -4,6 +4,7 @@ import { ImageConstants } from "../image.constants";
 const isUpcoming = false;
 
 export default [
+  // Past sessions
   {
     title: "Implementing TRPC in JavaScript",
     instructor: "Rupesh Budhathoki",
@@ -14,7 +15,7 @@ export default [
     isUpcoming,
   },
   {
-    title: "Journey to Go Lang",
+    title: "Journey to Golang",
     instructor: "Mukesh Kumar Chaudhary",
     date: "28th April 2024",
     time: undefined,
@@ -49,25 +50,6 @@ export default [
     videoURL: "https://youtu.be/tcMPE5ljELk",
     isUpcoming,
   },
-
-  {
-    title: "Roadmap on Web Security",
-    instructor: "-",
-    date: undefined,
-    time: undefined,
-    flyer: undefined,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
-    isUpcoming: true,
-  },
-  {
-    title: "Roadmap on Software QA",
-    instructor: "-",
-    date: undefined,
-    time: undefined,
-    flyer: undefined,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
-    isUpcoming: true,
-  },
   {
     title: "Roadmap on AI/ML",
     instructor: "Jyoti Pokhrel",
@@ -89,7 +71,7 @@ export default [
     isUpcoming,
   },
   {
-    title: "Getting Started with Rust",
+    title: "Exploring Rust",
     instructor: "Nirjal Dhakal",
     date: "2024 Nov 1",
     time: "7pm onwards",
@@ -98,17 +80,45 @@ export default [
     isUpcoming,
   },
   {
-    title: "Learn laravel with Todo (Fullstack Project)",
+    title: "Learn Laravel with Todo (Fullstack Project)",
     instructor: "Vedant Thakur",
-    date: undefined,
+    date: "2024 Nov 10",
     time: "7pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].LearnLaravel,
+    videoURL: "https://www.youtube.com/@EverydayKarma",
+    isUpcoming,
+  },
+  {
+    title: "Roadmap to Web Application Security",
+    instructor: "Bikram Kharal",
+    date: "2024 Nov 17",
+    time: "7pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].WebSecurity,
+    videoURL: "https://www.youtube.com/@EverydayKarma",
+    isUpcoming,
+  },
+  {
+    title: "Capture Your First Flag",
+    instructor: "Rajan Kshedal",
+    date: "2024 Nov 22",
+    time: "7pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].CTF,
+    videoURL: "https://www.youtube.com/@EverydayKarma",
+    isUpcoming,
+  },
+
+  // Upcoming sessions
+  {
+    title: "How to Freelance, Tips and Advices",
+    instructor: "-",
+    date: undefined,
+    time: undefined,
     flyer: undefined,
     videoURL: "https://www.youtube.com/@EverydayKarma",
     isUpcoming: true,
   },
-
   {
-    title: "How to Freelance, Tips and Advices",
+    title: "Roadmap on Software QA",
     instructor: "-",
     date: undefined,
     time: undefined,
