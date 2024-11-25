@@ -8,6 +8,7 @@ export interface FeedbackType {
   alt: string;
 }
 
+
 export const Feedbacklist = () => {
   const [previewImage, setPreviewImage] = useState<FeedbackType | null>(null);
 
