@@ -17,14 +17,14 @@ export class ImageConstants {
 
   public static readonly HERO_BG = `${this.ASSET_BASE_URL}/images/hero/hero-bg.jpg`;
 
-  public static readonly TECH_LOGOS = {
-    HTML: `${this.ASSET_BASE_URL}/images/tech-logos/html.png`,
-    CSS: `${this.ASSET_BASE_URL}/images/tech-logos/css.png`,
-    JavaScript: `${this.ASSET_BASE_URL}/images/tech-logos/javascript.png`,
-    React: `${this.ASSET_BASE_URL}/images/tech-logos/react.png`,
-    SQL: `${this.ASSET_BASE_URL}/images/tech-logos/sql.png`,
-    Docker: `${this.ASSET_BASE_URL}/images/tech-logos/docker.png`,
-  };
+  // public static readonly TECH_LOGOS = {
+  //   HTML: `${this.ASSET_BASE_URL}/images/tech-logos/html.png`,
+  //   CSS: `${this.ASSET_BASE_URL}/images/tech-logos/css.png`,
+  //   JavaScript: `${this.ASSET_BASE_URL}/images/tech-logos/javascript.png`,
+  //   React: `${this.ASSET_BASE_URL}/images/tech-logos/react.png`,
+  //   SQL: `${this.ASSET_BASE_URL}/images/tech-logos/sql.png`,
+  //   Docker: `${this.ASSET_BASE_URL}/images/tech-logos/docker.png`,
+  // };
 
   public static readonly FEEDBACKS = {
     1: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-01.png`,
