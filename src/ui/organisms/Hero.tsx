@@ -17,7 +17,7 @@ export default function Hero() {
                 key={techLogo.alt}
                 src={techLogo.src}
                 alt={techLogo.alt}
-                className="~size-12/28"
+                className="~size-12/28 hover:brightness-200 cursor-pointer transition duration-300"
               />
             ))}
           </div>
