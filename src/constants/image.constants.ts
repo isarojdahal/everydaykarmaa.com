@@ -4,9 +4,12 @@ export class ImageConstants {
   public static readonly SESSIONS = {
     2025: {},
     2024: {
+      CTF: `${this.ASSET_BASE_URL}/images/sessions/flyers/Capture_The_Flag.png`,
+      WebSecurity: `${this.ASSET_BASE_URL}/images/sessions/flyers/Web_App_Security.png`,
+      LearnLaravel: `${this.ASSET_BASE_URL}/images/sessions/flyers/Learn_Laravel.png`,
       ExploringRust: `${this.ASSET_BASE_URL}/images/sessions/flyers/Exploring_Rust_Abhiyan_Dhakal.png`,
       DevOpsRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DevOpsRoadmap.png`,
-      AIMLRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/AIML Roadmap.png`,
+      AIMLRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/AIML_Roadmap.png`,
       DataScienceRoadmap: `${this.ASSET_BASE_URL}/images/sessions/flyers/DataScience.png`,
       trpcSession: `${this.ASSET_BASE_URL}/images/sessions/flyers/TRPC_JS.png`,
       KubernetesSession: `${this.ASSET_BASE_URL}/images/sessions/flyers/GettingStartedK8.png`,
@@ -17,14 +20,14 @@ export class ImageConstants {
 
   public static readonly HERO_BG = `${this.ASSET_BASE_URL}/images/hero/hero-bg.jpg`;
 
-  public static readonly TECH_LOGOS = {
-    HTML: `${this.ASSET_BASE_URL}/images/tech-logos/html.png`,
-    CSS: `${this.ASSET_BASE_URL}/images/tech-logos/css.png`,
-    JavaScript: `${this.ASSET_BASE_URL}/images/tech-logos/javascript.png`,
-    React: `${this.ASSET_BASE_URL}/images/tech-logos/react.png`,
-    SQL: `${this.ASSET_BASE_URL}/images/tech-logos/sql.png`,
-    Docker: `${this.ASSET_BASE_URL}/images/tech-logos/docker.png`,
-  };
+  // public static readonly TECH_LOGOS = {
+  //   HTML: `${this.ASSET_BASE_URL}/images/tech-logos/html.png`,
+  //   CSS: `${this.ASSET_BASE_URL}/images/tech-logos/css.png`,
+  //   JavaScript: `${this.ASSET_BASE_URL}/images/tech-logos/javascript.png`,
+  //   React: `${this.ASSET_BASE_URL}/images/tech-logos/react.png`,
+  //   SQL: `${this.ASSET_BASE_URL}/images/tech-logos/sql.png`,
+  //   Docker: `${this.ASSET_BASE_URL}/images/tech-logos/docker.png`,
+  // };
 
   public static readonly FEEDBACKS = {
     1: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-01.png`,
@@ -43,11 +46,12 @@ export class ImageConstants {
     15: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-15.png`,
     16: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-16.png`,
     17: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-17.png`,
+    18: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-18.png`,
   };
 
   public static readonly PARTNERS = {
     Gracathon2081: `${this.ASSET_BASE_URL}/images/partners/gracathon-2081.png`,
     SoftwareFreedomDay2024: `${this.ASSET_BASE_URL}/images/partners/software-freedom-day-2024.png`,
-    drcfs: `${this.ASSET_BASE_URL}/images/partners/DRCFS 2023 March 09.jpg`,
+    drcfs: `${this.ASSET_BASE_URL}/images/partners/DRCFS-2023.jpg`,
   };
 }

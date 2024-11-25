@@ -13,6 +13,7 @@ build
 dist-ssr
 *.local
 pnpm-lock.yaml
+tsconfig.app.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
