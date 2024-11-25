@@ -1,12 +1,14 @@
 import feedbackData from "@/constants/data/feedback.data";
-
 import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { ImagePreview } from "../molecules/ImagePreview";
+
 export interface FeedbackType {
   src: string;
   alt: string;
 }
+
+
 export const Feedbacklist = () => {
   const [previewImage, setPreviewImage] = useState<FeedbackType | null>(null);
 

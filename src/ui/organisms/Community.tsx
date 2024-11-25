@@ -8,27 +8,30 @@ import SectionHeading from "../atoms/SectionHeading";
 const communityData: CommunityCardPropType[] = [
   {
     title: "Youtube",
-    memberCount: "3K+",
+    memberCount: "3.2K+",
     icon: <FaYoutube className="size-20" />,
     url: "https://www.youtube.com/@EverydayKarma",
   },
   {
     title: "Discord",
-    memberCount: "800+",
+    memberCount: "1K+",
     icon: <FaDiscord className="size-20" />,
     url: "https://discord.gg/t9xcztuRqK",
   },
   {
     title: "LinkedIn",
-    memberCount: "700+",
+    memberCount: "800+",
     icon: <FaLinkedin className="size-20" />,
     url: "https://www.linkedin.com/company/everydaykarma/",
   },
   {
     title: "Facebook",
-    memberCount: "2K+",
+    memberCount: "5.2K+",
     icon: <FaFacebook className="size-20" />,
-    url: "https://www.facebook.com/groups/167150781674830",
+    // FB Group
+    // url: "https://www.facebook.com/groups/167150781674830",
+    // FB Page
+    url: "https://www.facebook.com/profile.php?id=100092336245112",
   },
 ];
 
