@@ -3,7 +3,7 @@ import fluid, { extract, screens, fontSize } from "fluid-tailwind";
 export default {
   darkMode: ["class"],
   content: {
-    files: ["./src/*", "./src/ui/**/*"],
+    files: ["./src/*", "./src/ui/**/*", "src/assets/**/*"],
     extract,
   },
   theme: {
