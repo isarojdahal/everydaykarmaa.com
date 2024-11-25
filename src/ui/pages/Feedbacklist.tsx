@@ -3,14 +3,15 @@ import feedbackData from "@/constants/data/feedback.data";
 import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { ImagePreview } from "../molecules/ImagePreview";
+export interface FeedbackType {
+  src: string;
+  alt: string;
+}
 export const Feedbacklist = () => {
-  const [previewImage, setPreviewImage] = useState<{
-    src: string;
-    alt: string;
-  } | null>(null);
+  const [previewImage, setPreviewImage] = useState<FeedbackType | null>(null);
 
-  const openPreview = (src: string, alt: string) => {
-    setPreviewImage({ src, alt });
+  const openPreview = (feedback: FeedbackType) => {
+    setPreviewImage({ src: feedback.src, alt: feedback.alt });
   };
 
   const closePreview = () => {
@@ -29,13 +30,13 @@ export const Feedbacklist = () => {
       </div>
 
       <div className="mt-24 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl  md:mx-auto mx-10">
-        {feedbackData.map((item, index) => (
+        {feedbackData.map((feedback: FeedbackType) => (
           <img
-            key={index}
-            src={item.src}
-            alt={item.alt}
+            key={feedback.alt}
+            src={feedback.src}
+            alt={feedback.alt}
             className="w-full h-[200px] object-contain rounded-lg shadow-lg"
-            onClick={() => openPreview(item.src, item.alt)}
+            onClick={() => openPreview(feedback)}
           />
         ))}
       </div>
