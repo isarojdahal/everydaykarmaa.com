@@ -11,6 +11,7 @@ const Docker = (props: React.SVGProps<SVGSVGElement>) => {
       {...props}
       className="group cursor-pointer ~size-14/32"
     >
+      <title>Docker</title>
       <circle
         cx={16}
         cy={16}
