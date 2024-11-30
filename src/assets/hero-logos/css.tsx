@@ -12,6 +12,7 @@ const Css = (props: React.SVGProps<SVGSVGElement>) => {
       className="group ~size-12/28 cursor-pointer"
       {...props}
     >
+      <title>CSS</title>
       <g>
         <path
           display="inline"

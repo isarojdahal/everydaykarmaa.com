@@ -4,6 +4,7 @@ export class ImageConstants {
   public static readonly SESSIONS = {
     2025: {},
     2024: {
+      INTERNSHIP_APPLE: `${this.ASSET_BASE_URL}/images/sessions/flyers/Internship_Experience_Apple.png`,
       CTF: `${this.ASSET_BASE_URL}/images/sessions/flyers/Capture_The_Flag.png`,
       WebSecurity: `${this.ASSET_BASE_URL}/images/sessions/flyers/Web_App_Security.png`,
       LearnLaravel: `${this.ASSET_BASE_URL}/images/sessions/flyers/Learn_Laravel.png`,
@@ -47,6 +48,8 @@ export class ImageConstants {
     16: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-16.png`,
     17: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-17.png`,
     18: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-18.png`,
+    19: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-19.png`,
+    20: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-20.png`,
   };
 
   public static readonly PARTNERS = {
