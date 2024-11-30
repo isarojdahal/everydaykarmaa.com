@@ -12,6 +12,7 @@ const Sql = (props: React.SVGProps<SVGSVGElement>) => {
       className="group cursor-pointer ~size-12/28"
       {...props}
     >
+      <title>SQL</title>
       <g>
         <g>
           <path

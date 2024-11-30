@@ -22,6 +22,11 @@ export default function Header() {
       title: "Sessions",
       current,
     },
+    {
+      to: "/opensource",
+      title: "Open Source",
+      current,
+    },
   ];
 
   navLinks.forEach((navLinks) => {

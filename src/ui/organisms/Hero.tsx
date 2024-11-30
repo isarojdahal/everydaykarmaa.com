@@ -28,8 +28,8 @@ export default function Hero() {
       <div className="container mx-auto px-4 absolute inset-0 z-10">
         <div className="w-full h-full flex flex-col ~gap-6/14 items-center justify-center">
           <div className="flex flex-wrap ~gap-4/14 items-center justify-center">
-            {logosArray.map((Logo: any) => {
-              return <div>{Logo}</div>;
+            {logosArray.map((Logo, index) => {
+              return <div key={index}>{Logo}</div>;
             })}
           </div>
           <h1 className="text-gray-300 ~text-3xl/7xl text-center font-bold">
