@@ -95,6 +95,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].WebSecurity,
     videoURL: "https://www.youtube.com/@EverydayKarma",
+    slidesURL: AssetsConstants.SESSIONS["2024"].WebSecurity.slideURL,
     isUpcoming,
   },
   {

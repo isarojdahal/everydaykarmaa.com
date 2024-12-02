@@ -10,6 +10,9 @@ export class AssetsConstants {
         slideURL: `${this.ASSET_BASE_URL_NETLIFY}/session-resources/AIMLRoadmap_JyotiPokhrel/Slides.pdf`,
         resourcesURL: `${this.ASSET_BASE_URL_NETLIFY}/session-resources/AIMLRoadmap_JyotiPokhrel/Resources.docx`,
       },
+      WebSecurity: {
+        slideURL: `${this.ASSET_BASE_URL_NETLIFY}/session-resources/Web_Security_Bikram_Kharal/Slides.pdf`,
+      },
     },
   };
 }
