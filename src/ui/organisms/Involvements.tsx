@@ -3,6 +3,7 @@ import partnersData from "@/constants/data/partners.data";
 import PageSection from "../atoms/PageSection";
 import SectionHeading from "../atoms/SectionHeading";
 import { ImagePreview } from "../molecules/ImagePreview";
+import Image from "../atoms/Image";
 
 export default function Involvements() {
   const [previewImage, setPreviewImage] = useState<{
@@ -28,7 +29,7 @@ export default function Involvements() {
             className="size-auto lg:max-xl:max-w-[250px] max-w-[250px] rounded-lg shadow-lg border-2 overflow-hidden cursor-pointer"
             onClick={() => openPreview(partner.src, partner.alt)}
           >
-            <img
+            <Image
               src={partner.src}
               alt={partner.alt}
               className="w-full h-full object-cover object-center"

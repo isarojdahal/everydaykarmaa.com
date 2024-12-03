@@ -1,6 +1,5 @@
 import sessionsData from "@/constants/data/sessions.data";
 import SessionCard, { SessionType } from "../organisms/SessionCard";
-import { Helmet } from "react-helmet-async";
 import Layout from "./Layout";
 import SectionHeading from "../atoms/SectionHeading";
 import PageSection from "../atoms/PageSection";
@@ -34,18 +33,6 @@ export function EventsListing({
 export default function Events() {
   return (
     <Layout>
-      <Helmet>
-        <title>EverydayKarma - Sessions</title>
-        <meta
-          name="description"
-          content="Welcome to the Sessions page of EverydayKarma, where you can explore about upcomming Events and pasts Events by EverydayKarma"
-        />
-        <meta
-          name="keywords"
-          content="sessions, roadmaps,TRPC,golang,AWS,Data science,kubernetes , EverydayKarma"
-        />
-      </Helmet>
-
       {/* Upcoming Events */}
       <EventsListing
         title="Our Upcoming Events"

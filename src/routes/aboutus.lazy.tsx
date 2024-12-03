@@ -1,12 +1,12 @@
-import { Feedbacklist } from "@/ui/pages/Feedbacklist";
+import AboutUs from "@/ui/pages/AboutUs";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 
-export const Route = createLazyFileRoute("/feedback")({
+export const Route = createLazyFileRoute("/aboutus")({
   component: () => (
     <>
       <Helmet>
-        <title>EverydayKarma - Feedbacks</title>
+        <title>EverydayKarma - About Us</title>
         <meta
           name="description"
           content="Welcome to the homepage of EverydayKarma, where you can find more about EverydayKarma"
@@ -16,7 +16,7 @@ export const Route = createLazyFileRoute("/feedback")({
           content="homepage, discord, linkedin, youtube, facebook, milestones, EverydayKarma"
         />
       </Helmet>
-      <Feedbacklist />,
+      <AboutUs />
     </>
   ),
 });

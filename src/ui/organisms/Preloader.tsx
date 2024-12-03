@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import EKLogo from "@/assets/logos/WHITELOGO_transparent@3x.png";
+import Image from "../atoms/Image";
 
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,7 +42,7 @@ const Preloader = () => {
       </style>
 
       <div className="flex flex-col animate-pulse">
-        <img
+        <Image
           src={EKLogo}
           alt="EverydayKarma Logo"
           className="block mx-auto size-52"

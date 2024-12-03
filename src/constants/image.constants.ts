@@ -50,6 +50,7 @@ export class ImageConstants {
     18: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-18.png`,
     19: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-19.png`,
     20: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-20.png`,
+    21: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-21.png`,
   };
 
   public static readonly PARTNERS = {

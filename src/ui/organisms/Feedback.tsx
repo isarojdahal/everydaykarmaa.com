@@ -7,6 +7,7 @@ import SectionHeading from "../atoms/SectionHeading";
 import PageSection from "../atoms/PageSection";
 import { Link } from "@tanstack/react-router";
 import { ImagePreview } from "../molecules/ImagePreview";
+import Image from "../atoms/Image";
 
 export default function FeedbackSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -86,7 +87,7 @@ export default function FeedbackSlider() {
                   className={`${itemsPerSlide === 1 ? "w-full" : itemsPerSlide === 2 ? "w-1/2" : "w-1/3"}`}
                   onClick={() => openPreview(feedback.src, feedback.alt)}
                 >
-                  <img
+                  <Image
                     src={feedback.src} // Use src from feedbackData
                     alt={feedback.alt} // Use alt from feedbackData
                     className="w-full h-[200px] object-contain rounded-lg shadow-lg"
