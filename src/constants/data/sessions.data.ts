@@ -94,7 +94,8 @@ export default [
     date: "2024 Nov 17",
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].WebSecurity,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
+    videoURL: "https://www.youtube.com/watch?v=28fgubfVgzY&t=2s",
+    slidesURL: AssetsConstants.SESSIONS["2024"].WebSecurity.slideURL,
     isUpcoming,
   },
   {
@@ -103,7 +104,7 @@ export default [
     date: "2024 Nov 22",
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].CTF,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
+    videoURL: "https://www.youtube.com/watch?v=E_DLhzYg5uo",
     isUpcoming,
   },
   {
@@ -112,7 +113,7 @@ export default [
     date: "2024 Nov 29",
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].INTERNSHIP_APPLE,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
+    videoURL: "https://youtu.be/izIsBpVUAMM",
     isUpcoming,
   },
 

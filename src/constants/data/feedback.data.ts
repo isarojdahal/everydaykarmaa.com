@@ -78,6 +78,10 @@ const feedbacks = [
     src: ImageConstants.FEEDBACKS[20],
     alt: "feed-back image-20",
   },
+  {
+    src: ImageConstants.FEEDBACKS[21],
+    alt: "feed-back image-21",
+  },
 ];
 
 export default shuffleArray([...feedbacks]); // Use spread to avoid mutating the original array

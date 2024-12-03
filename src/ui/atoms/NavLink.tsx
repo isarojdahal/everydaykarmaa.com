@@ -1,9 +1,9 @@
 import { Link } from "@tanstack/react-router";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export interface NavLinkType {
   to: string;
   title: string;
-  current: boolean;
 }
 
 export interface NavLinkPropsType {
@@ -15,9 +15,18 @@ export default function NavLink({ navLink }: NavLinkPropsType) {
     <li>
       <Link
         to={navLink.to}
-        className={`text-xl ${navLink.current && "font-bold"} hover:bg-black/25 transition-colors duration-300 py-2 px-4 rounded-lg`}
+        activeProps={{
+          className: "font-bold",
+        }}
+        target={`${navLink.title === "Learn" ? "_blank" : "_self"}`}
+        className={`text-xl hover:bg-black/25 transition-colors duration-300 py-2 px-4 rounded-lg flex items-center gap-2`}
       >
-        {navLink.title}
+        <span>{navLink.title}</span>
+        {navLink.title === "Learn" && (
+          <sup>
+            <SquareArrowOutUpRight className="size-4" />
+          </sup>
+        )}
       </Link>
     </li>
   );

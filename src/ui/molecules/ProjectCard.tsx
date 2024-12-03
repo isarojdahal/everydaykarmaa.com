@@ -1,4 +1,5 @@
 import { FaGithub, FaGlobe } from "react-icons/fa6";
+import Image from "../atoms/Image";
 
 export interface ProjectCardPropType {
   title: string;
@@ -59,7 +60,7 @@ export default function ProjectCard({
           title={`${project.title} Contributors`}
           className="flex items-center justify-center"
         >
-          <img
+          <Image
             src={project.contributors}
             alt={`${project.title} Contributors`}
           />

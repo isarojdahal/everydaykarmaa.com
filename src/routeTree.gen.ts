@@ -19,6 +19,7 @@ import { Route as rootRoute } from "./routes/__root";
 const SessionsLazyImport = createFileRoute("/sessions")();
 const OpensourceLazyImport = createFileRoute("/opensource")();
 const FeedbackLazyImport = createFileRoute("/feedback")();
+const AboutusLazyImport = createFileRoute("/aboutus")();
 const IndexLazyImport = createFileRoute("/")();
 
 // Create/Update Routes
@@ -41,6 +42,12 @@ const FeedbackLazyRoute = FeedbackLazyImport.update({
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import("./routes/feedback.lazy").then((d) => d.Route));
 
+const AboutusLazyRoute = AboutusLazyImport.update({
+  id: "/aboutus",
+  path: "/aboutus",
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import("./routes/aboutus.lazy").then((d) => d.Route));
+
 const IndexLazyRoute = IndexLazyImport.update({
   id: "/",
   path: "/",
@@ -56,6 +63,13 @@ declare module "@tanstack/react-router" {
       path: "/";
       fullPath: "/";
       preLoaderRoute: typeof IndexLazyImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/aboutus": {
+      id: "/aboutus";
+      path: "/aboutus";
+      fullPath: "/aboutus";
+      preLoaderRoute: typeof AboutusLazyImport;
       parentRoute: typeof rootRoute;
     };
     "/feedback": {
@@ -86,6 +100,7 @@ declare module "@tanstack/react-router" {
 
 export interface FileRoutesByFullPath {
   "/": typeof IndexLazyRoute;
+  "/aboutus": typeof AboutusLazyRoute;
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
@@ -93,6 +108,7 @@ export interface FileRoutesByFullPath {
 
 export interface FileRoutesByTo {
   "/": typeof IndexLazyRoute;
+  "/aboutus": typeof AboutusLazyRoute;
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
@@ -101,6 +117,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRoute;
   "/": typeof IndexLazyRoute;
+  "/aboutus": typeof AboutusLazyRoute;
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
@@ -108,15 +125,16 @@ export interface FileRoutesById {
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/feedback" | "/opensource" | "/sessions";
+  fullPaths: "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
   fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/feedback" | "/opensource" | "/sessions";
-  id: "__root__" | "/" | "/feedback" | "/opensource" | "/sessions";
+  to: "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
+  id: "__root__" | "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
   fileRoutesById: FileRoutesById;
 }
 
 export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute;
+  AboutusLazyRoute: typeof AboutusLazyRoute;
   FeedbackLazyRoute: typeof FeedbackLazyRoute;
   OpensourceLazyRoute: typeof OpensourceLazyRoute;
   SessionsLazyRoute: typeof SessionsLazyRoute;
@@ -124,6 +142,7 @@ export interface RootRouteChildren {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
+  AboutusLazyRoute: AboutusLazyRoute,
   FeedbackLazyRoute: FeedbackLazyRoute,
   OpensourceLazyRoute: OpensourceLazyRoute,
   SessionsLazyRoute: SessionsLazyRoute,
@@ -140,6 +159,7 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
+        "/aboutus",
         "/feedback",
         "/opensource",
         "/sessions"
@@ -147,6 +167,9 @@ export const routeTree = rootRoute
     },
     "/": {
       "filePath": "index.lazy.tsx"
+    },
+    "/aboutus": {
+      "filePath": "aboutus.lazy.tsx"
     },
     "/feedback": {
       "filePath": "feedback.lazy.tsx"
