@@ -18,6 +18,7 @@ export default function NavLink({ navLink }: NavLinkPropsType) {
         activeProps={{
           className: "font-bold",
         }}
+        target={`${navLink.title === "Learn" ? "_blank" : "_self"}`}
         className={`text-xl hover:bg-black/25 transition-colors duration-300 py-2 px-4 rounded-lg flex items-center gap-2`}
       >
         <span>{navLink.title}</span>

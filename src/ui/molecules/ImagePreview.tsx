@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import Image from "../atoms/Image";
 interface ImagePreviewProps {
   src: string;
   alt: string;
@@ -19,7 +20,7 @@ export const ImagePreview: React.FC<ImagePreviewProps> = ({
         >
           <X size={24} />
         </button>
-        <img
+        <Image
           src={src}
           alt={alt}
           className="max-w-full max-h-[90vh] object-cover"

@@ -9,6 +9,7 @@ import {
   SheetTrigger,
 } from "../shadcn/sheet";
 import EKLogo from "@/assets/logos/WHITELOGO_transparent@3x.png";
+import Image from "../atoms/Image";
 
 export interface NavBarPropsType {
   navLinks: NavLinkType[];
@@ -38,7 +39,7 @@ export function MobileNavbar({ navLinks }: NavBarPropsType) {
         <SheetContent side="top">
           <SheetHeader>
             <SheetTitle>
-              <img
+              <Image
                 src={EKLogo}
                 alt="EverydayKarma Logo"
                 className="block mx-auto size-40"

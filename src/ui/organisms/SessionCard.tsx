@@ -16,6 +16,7 @@ import {
 } from "@/ui/shadcn/card";
 import { Button } from "@/ui/shadcn/button";
 import { Link } from "@tanstack/react-router";
+import Image from "../atoms/Image";
 
 export interface SessionType {
   title: string;
@@ -81,9 +82,10 @@ export default function SessionCard({ session }: { session: SessionType }) {
       <CardHeader className="p-0">
         {session.flyer && (
           <div className="relative rounded-t-lg overflow-hidden max-sm:bg-everydaykarma max-sm:h-50 h-52 max-md:h-96 w-full">
-            <img
+            <Image
               src={session.flyer}
               alt={session.title}
+              loading="lazy"
               className="object-cover object-top max-sm:object-contain max-sm:object-center w-full h-full"
             />
           </div>
