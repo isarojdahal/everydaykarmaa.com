@@ -40,6 +40,15 @@ const projects: ProjectCardPropType[] = [
     contributors:
       "https://contrib.rocks/image?repo=28softwares/DocumentProject",
   },
+  {
+    title: "Location API",
+    repoLink: "https://github.com/28softwares/location-api",
+    description:
+      "LocationAPI for Nepal's provinces, districts, municipalities, and wards",
+    contributorsGraph:
+      "https://github.com/28softwares/location-api/graphs/contributors",
+    contributors: "https://contrib.rocks/image?repo=28softwares/location-api",
+  },
 ];
 
 export default projects;
