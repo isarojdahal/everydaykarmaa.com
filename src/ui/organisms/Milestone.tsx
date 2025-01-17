@@ -8,8 +8,8 @@ export default function Milestones() {
   const milestones = [
     {
       title: "Free React.js Course",
-      date: "Jan 5, 2022 - Apr 19, 2022",
-      duration: "3.5 Months",
+      date: "Jan 5, 2022 - Jan 28, 2022",
+      duration: "1 Months",
       icon: <CalendarCheck className="h-6 w-6" />,
       link: "https://learn.everydaykarmaa.com/notes/reactjs/understanding-package-managers-npm.-vs-yarn-intro-to-react-js",
     },
