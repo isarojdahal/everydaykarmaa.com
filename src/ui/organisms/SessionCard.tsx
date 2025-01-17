@@ -114,7 +114,7 @@ export default function SessionCard({ session }: { session: SessionType }) {
           <Dialog>
             <DialogTrigger asChild>
               <button
-                className="flex items-center"
+                className={`flex items-center ${session.images && "underline"}`}
                 disabled={Boolean(!session.images)}
               >
                 <ImageIcon className="mr-2 h-4 w-4" />
