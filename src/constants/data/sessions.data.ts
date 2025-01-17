@@ -116,6 +116,24 @@ export default [
     videoURL: "https://youtu.be/izIsBpVUAMM",
     isUpcoming,
   },
+  {
+    title: "Flutter and Freelance",
+    instructor: "Sachin Dahal",
+    date: "2024 Dec 10",
+    time: "8pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].Flutter_And_Freelance,
+    videoURL: "https://youtu.be/rYBNx0sPRPU?si=Oux7_JfHp-6fWcyw",
+    isUpcoming,
+  },
+  {
+    title: "Web 3.0, Blockchain, Startup & More",
+    instructor: "Krishna Dahal",
+    date: "2024 Dec 27",
+    time: "8:30pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].Web_3,
+    videoURL: "https://youtu.be/MK-537YIBTs?si=ONlnUOp4M0SsO4Yo",
+    isUpcoming,
+  },
 
   // Upcoming sessions
   {
@@ -133,6 +151,15 @@ export default [
     date: undefined,
     time: undefined,
     flyer: undefined,
+    videoURL: "https://www.youtube.com/@EverydayKarma",
+    isUpcoming: true,
+  },
+  {
+    title: "Journey to Microsoft and Computer Science",
+    instructor: "Aayush Bhatta",
+    date: "2025 Jan 18",
+    time: "8pm onwards",
+    flyer: ImageConstants.SESSIONS["2025"].Journey_to_Microsoft,
     videoURL: "https://www.youtube.com/@EverydayKarma",
     isUpcoming: true,
   },
