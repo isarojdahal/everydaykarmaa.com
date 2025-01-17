@@ -114,6 +114,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].INTERNSHIP_APPLE,
     videoURL: "https://youtu.be/izIsBpVUAMM",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].INTERNSHIP_APPLE,
     isUpcoming,
   },
   {
@@ -123,6 +124,7 @@ export default [
     time: "8pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].Flutter_And_Freelance,
     videoURL: "https://youtu.be/rYBNx0sPRPU?si=Oux7_JfHp-6fWcyw",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Flutter_And_Freelance,
     isUpcoming,
   },
   {
@@ -132,6 +134,7 @@ export default [
     time: "8:30pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].Web_3,
     videoURL: "https://youtu.be/MK-537YIBTs?si=ONlnUOp4M0SsO4Yo",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Web_3,
     isUpcoming,
   },
 

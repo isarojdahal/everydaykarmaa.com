@@ -26,16 +26,16 @@ export class ImageConstants {
   public static readonly SESSIONS_SCREENSHOTS = {
     2025: {},
     2024: {
-      Web_3: {
-        1: `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/1.webp`,
-        2: `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/2.webp`,
-      },
-      Flutter_And_Freelance: {
-        1: `${this.ASSET_BASE_URL}/images/sessions-screenshots/Flutter_And_Freelance/1.webp`,
-      },
-      INTERNSHIP_APPLE: {
-        1: `${this.ASSET_BASE_URL}/images/sessions-screenshots/Internship_Experience_Apple/1.webp`,
-      },
+      Web_3: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/1.webp`,
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/2.webp`,
+      ],
+      Flutter_And_Freelance: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Flutter_And_Freelance/1.webp`,
+      ],
+      INTERNSHIP_APPLE: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Internship_Experience_Apple/1.webp`,
+      ],
     },
   };
 
