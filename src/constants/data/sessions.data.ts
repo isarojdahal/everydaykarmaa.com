@@ -137,6 +137,15 @@ export default [
     images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Web_3,
     isUpcoming,
   },
+  {
+    title: "Journey to Microsoft and Computer Science",
+    instructor: "Aayush Bhatta",
+    date: "2025 Jan 18",
+    time: "8pm onwards",
+    flyer: ImageConstants.SESSIONS["2025"].Journey_to_Microsoft,
+    videoURL: "https://youtu.be/b0RcyN2gkEQ?si=L288L44PLV_PGHYJ",
+    isUpcoming,
+  },
 
   // Upcoming sessions
   {
@@ -154,15 +163,6 @@ export default [
     date: undefined,
     time: undefined,
     flyer: undefined,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
-    isUpcoming: true,
-  },
-  {
-    title: "Journey to Microsoft and Computer Science",
-    instructor: "Aayush Bhatta",
-    date: "2025 Jan 18",
-    time: "8pm onwards",
-    flyer: ImageConstants.SESSIONS["2025"].Journey_to_Microsoft,
     videoURL: "https://www.youtube.com/@EverydayKarma",
     isUpcoming: true,
   },
