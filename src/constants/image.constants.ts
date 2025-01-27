@@ -4,6 +4,7 @@ export class ImageConstants {
   public static readonly SESSIONS = {
     2025: {
       Journey_to_Microsoft: `${this.ASSET_BASE_URL}/images/sessions/flyers/Journey_to_Microsoft.png`,
+      Senior_Software_Engineer: `${this.ASSET_BASE_URL}/images/sessions/flyers/Senior_Software_Engineer.png`,
     },
     2024: {
       Web_3: `${this.ASSET_BASE_URL}/images/sessions/flyers/Web_3.0.png`,

@@ -146,6 +146,15 @@ export default [
     videoURL: "https://youtu.be/b0RcyN2gkEQ?si=L288L44PLV_PGHYJ",
     isUpcoming,
   },
+  {
+    title: "In Conversation with Senior Software Developer",
+    instructor: "Geshan Manandhar",
+    date: "2025 Jan 23",
+    time: "6:45am onwards",
+    flyer: ImageConstants.SESSIONS["2025"].Senior_Software_Engineer,
+    videoURL: "https://youtu.be/Ebhe84ClLGg?si=-A2UIAv0PwYNL8Gs",
+    isUpcoming,
+  },
 
   // Upcoming sessions
   {
