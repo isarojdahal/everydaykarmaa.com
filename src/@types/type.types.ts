@@ -11,7 +11,7 @@ export interface SessionType {
   slidesURL?: string;
   resourcesURL?: string;
   images?: string[];
-  type: SessionTypeEnum | undefined;
+  type?: SessionTypeEnum | undefined;
 }
 
 export enum SessionTypeEnum {
