@@ -2,6 +2,7 @@ import {
   Calendar,
   Clock,
   FileText,
+  ImageIcon,
   SquarePlay,
   User,
   Video,
@@ -16,18 +17,14 @@ import {
 import { Button } from "@/ui/shadcn/button";
 import { Link } from "@tanstack/react-router";
 import Image from "../atoms/Image";
-
-export interface SessionType {
-  title: string;
-  instructor: string;
-  date?: string;
-  time?: string;
-  flyer?: string;
-  videoURL?: string;
-  isUpcoming: boolean;
-  slidesURL?: string;
-  resourcesURL?: string;
-}
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "../shadcn/dialog";
+import { SessionType } from "@/@types/type.types";
 
 export function Assets({ ...session }: SessionType) {
   return (
@@ -87,7 +84,19 @@ export default function SessionCard({ session }: { session: SessionType }) {
         )}
       </CardHeader>
       <CardContent className="flex-grow p-4">
-        <CardTitle className="text-xl mb-2">{session.title}</CardTitle>
+        <CardTitle className="text-xl mb-2">
+          <a href={session.videoURL}>
+            {session.title}{" "}
+            {session.type ? (
+              <span className="inline-flex items-center px-3 py-1 text-sm  font-normal rounded-full bg-blue-500 text-white">
+                {session.type}
+              </span>
+            ) : (
+              ""
+            )}
+          </a>
+        </CardTitle>
+
         <div className="space-y-2 text-sm text-muted-foreground">
           <p className="flex items-center">
             <User className="mr-2 h-4 w-4" />
@@ -101,6 +110,32 @@ export default function SessionCard({ session }: { session: SessionType }) {
             <Clock className="mr-2 h-4 w-4" />
             {session.time || "N/A"}
           </p>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                className={`flex items-center ${session.images && "underline"}`}
+                disabled={Boolean(!session.images)}
+              >
+                <ImageIcon className="mr-2 h-4 w-4" />
+                {session.images ? "Session Images" : "N/A"}
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-h-[80vh] max-w-7xl overflow-auto">
+              <DialogTitle>{session.title}</DialogTitle>
+              <DialogDescription></DialogDescription>
+              <div className="flex flex-wrap items-start justify-center gap-6 py-8">
+                {session.images?.map((image, index) => (
+                  <div key={index} className="flex flex-col items-center gap-4">
+                    <div className="overflow-hidden rounded-md">
+                      <img src={image} alt={session.title} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
+
           <Assets {...session} />
         </div>
       </CardContent>

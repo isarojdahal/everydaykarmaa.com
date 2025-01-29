@@ -1,8 +1,9 @@
 import sessionsData from "@/constants/data/sessions.data";
-import SessionCard, { SessionType } from "../organisms/SessionCard";
+import SessionCard from "../organisms/SessionCard";
 import Layout from "./Layout";
 import SectionHeading from "../atoms/SectionHeading";
 import PageSection from "../atoms/PageSection";
+import { SessionType } from "@/@types/type.types";
 
 export interface EventsListingPropsType {
   title: string;

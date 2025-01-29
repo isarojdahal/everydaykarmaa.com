@@ -1,3 +1,4 @@
+import { SessionTypeEnum } from "@/@types/type.types";
 import { AssetsConstants } from "../assets.constants";
 import { ImageConstants } from "../image.constants";
 
@@ -12,6 +13,7 @@ export default [
     time: undefined,
     videoURL: "https://youtu.be/y_0ulb9iK10Q",
     flyer: ImageConstants.SESSIONS["2024"].trpcSession,
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -21,6 +23,7 @@ export default [
     time: undefined,
     flyer: ImageConstants.SESSIONS["2024"].GoLang,
     videoURL: "https://youtu.be/DVvspkGdxFo",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -30,6 +33,7 @@ export default [
     time: undefined,
     flyer: ImageConstants.SESSIONS["2024"].KubernetesSession,
     videoURL: "https://youtu.be/Aqy2qGTmC-U",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -39,6 +43,7 @@ export default [
     time: undefined,
     videoURL: "https://youtu.be/VLil1H4L6EE",
     flyer: ImageConstants.SESSIONS["2024"].AWSCertificationRoadmap,
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -48,6 +53,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].DataScienceRoadmap,
     videoURL: "https://youtu.be/tcMPE5ljELk",
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -59,6 +65,7 @@ export default [
     videoURL: "https://youtu.be/9TLkSx6LBGc",
     slidesURL: AssetsConstants.SESSIONS["2024"].ALMLRoadmap.slideURL,
     resourcesURL: AssetsConstants.SESSIONS["2024"].ALMLRoadmap.resourcesURL,
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -68,6 +75,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].DevOpsRoadmap,
     videoURL: "https://youtu.be/8BLP-nG2SQU",
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -77,6 +85,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].ExploringRust,
     videoURL: "https://youtu.be/qMBWu99emrs",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -86,6 +95,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].LearnLaravel,
     videoURL: "https://www.youtube.com/@EverydayKarma",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -96,6 +106,7 @@ export default [
     flyer: ImageConstants.SESSIONS["2024"].WebSecurity,
     videoURL: "https://www.youtube.com/watch?v=28fgubfVgzY&t=2s",
     slidesURL: AssetsConstants.SESSIONS["2024"].WebSecurity.slideURL,
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -105,6 +116,8 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].CTF,
     videoURL: "https://www.youtube.com/watch?v=E_DLhzYg5uo",
+    type: SessionTypeEnum.WORKSHOP,
+
     isUpcoming,
   },
   {
@@ -114,19 +127,55 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].INTERNSHIP_APPLE,
     videoURL: "https://youtu.be/izIsBpVUAMM",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].INTERNSHIP_APPLE,
+    type: SessionTypeEnum.PODCAST,
+    isUpcoming,
+  },
+  {
+    title: "Flutter and Freelance",
+    instructor: "Sachin Dahal",
+    date: "2024 Dec 10",
+    time: "8pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].Flutter_And_Freelance,
+    videoURL: "https://youtu.be/rYBNx0sPRPU?si=Oux7_JfHp-6fWcyw",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Flutter_And_Freelance,
+    type: SessionTypeEnum.PODCAST,
+    isUpcoming,
+  },
+  {
+    title: "Web 3.0, Blockchain, Startup & More",
+    instructor: "Krishna Dahal",
+    date: "2024 Dec 27",
+    time: "8:30pm onwards",
+    flyer: ImageConstants.SESSIONS["2024"].Web_3,
+    videoURL: "https://youtu.be/MK-537YIBTs?si=ONlnUOp4M0SsO4Yo",
+    images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Web_3,
+    type: SessionTypeEnum.PODCAST,
+    isUpcoming,
+  },
+  {
+    title: "Journey to Microsoft and Computer Science",
+    instructor: "Aayush Bhatta",
+    date: "2025 Jan 18",
+    time: "8pm onwards",
+    flyer: ImageConstants.SESSIONS["2025"].Journey_to_Microsoft,
+    videoURL: "https://youtu.be/b0RcyN2gkEQ?si=L288L44PLV_PGHYJ",
+    type: SessionTypeEnum.PODCAST,
+    isUpcoming,
+  },
+  {
+    title: "In Conversation with Senior Software Developer",
+    instructor: "Geshan Manandhar",
+    date: "2025 Jan 23",
+    time: "6:45am onwards",
+    flyer: ImageConstants.SESSIONS["2025"].Senior_Software_Engineer,
+    videoURL: "https://youtu.be/Ebhe84ClLGg?si=-A2UIAv0PwYNL8Gs",
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
 
   // Upcoming sessions
-  {
-    title: "How to Freelance, Tips and Advices",
-    instructor: "-",
-    date: undefined,
-    time: undefined,
-    flyer: undefined,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
-    isUpcoming: true,
-  },
+
   {
     title: "Roadmap on Software QA",
     instructor: "-",

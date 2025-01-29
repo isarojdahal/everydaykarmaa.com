@@ -17,19 +17,19 @@ const communityData: CommunityCardPropType[] = [
   },
   {
     title: "Youtube",
-    memberCount: "3.2K+",
+    memberCount: "4K+",
     icon: <FaYoutube className="size-20" />,
     url: "https://www.youtube.com/@EverydayKarma",
   },
   {
     title: "Discord",
-    memberCount: "1K+",
+    memberCount: "1.5K+",
     icon: <FaDiscord className="size-20" />,
     url: "https://discord.gg/t9xcztuRqK",
   },
   {
     title: "TikTok",
-    memberCount: "200+",
+    memberCount: "1.1K+",
     icon: <FaTiktok className="size-20" />,
     url: "https://www.tiktok.com/@everyday.karma",
   },
