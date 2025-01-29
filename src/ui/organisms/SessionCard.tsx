@@ -24,19 +24,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "../shadcn/dialog";
-
-export interface SessionType {
-  title: string;
-  instructor: string;
-  date?: string;
-  time?: string;
-  flyer?: string;
-  videoURL?: string;
-  isUpcoming: boolean;
-  slidesURL?: string;
-  resourcesURL?: string;
-  images?: string[];
-}
+import { SessionType } from "@/@types/type.types";
 
 export function Assets({ ...session }: SessionType) {
   return (
@@ -96,7 +84,19 @@ export default function SessionCard({ session }: { session: SessionType }) {
         )}
       </CardHeader>
       <CardContent className="flex-grow p-4">
-        <CardTitle className="text-xl mb-2">{session.title}</CardTitle>
+        <CardTitle className="text-xl mb-2">
+          <a href={session.videoURL}>
+            {session.title}{" "}
+            {session.type ? (
+              <span className="inline-flex items-center px-3 py-1 text-sm  font-normal rounded-full bg-blue-500 text-white">
+                {session.type}
+              </span>
+            ) : (
+              ""
+            )}
+          </a>
+        </CardTitle>
+
         <div className="space-y-2 text-sm text-muted-foreground">
           <p className="flex items-center">
             <User className="mr-2 h-4 w-4" />

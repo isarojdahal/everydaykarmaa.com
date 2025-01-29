@@ -1,3 +1,4 @@
+import { SessionTypeEnum } from "@/@types/type.types";
 import { AssetsConstants } from "../assets.constants";
 import { ImageConstants } from "../image.constants";
 
@@ -12,6 +13,7 @@ export default [
     time: undefined,
     videoURL: "https://youtu.be/y_0ulb9iK10Q",
     flyer: ImageConstants.SESSIONS["2024"].trpcSession,
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -115,6 +117,7 @@ export default [
     flyer: ImageConstants.SESSIONS["2024"].INTERNSHIP_APPLE,
     videoURL: "https://youtu.be/izIsBpVUAMM",
     images: ImageConstants.SESSIONS_SCREENSHOTS[2024].INTERNSHIP_APPLE,
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
   {
@@ -125,6 +128,7 @@ export default [
     flyer: ImageConstants.SESSIONS["2024"].Flutter_And_Freelance,
     videoURL: "https://youtu.be/rYBNx0sPRPU?si=Oux7_JfHp-6fWcyw",
     images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Flutter_And_Freelance,
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
   {
@@ -135,6 +139,7 @@ export default [
     flyer: ImageConstants.SESSIONS["2024"].Web_3,
     videoURL: "https://youtu.be/MK-537YIBTs?si=ONlnUOp4M0SsO4Yo",
     images: ImageConstants.SESSIONS_SCREENSHOTS[2024].Web_3,
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
   {
@@ -144,6 +149,7 @@ export default [
     time: "8pm onwards",
     flyer: ImageConstants.SESSIONS["2025"].Journey_to_Microsoft,
     videoURL: "https://youtu.be/b0RcyN2gkEQ?si=L288L44PLV_PGHYJ",
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
   {
@@ -153,19 +159,12 @@ export default [
     time: "6:45am onwards",
     flyer: ImageConstants.SESSIONS["2025"].Senior_Software_Engineer,
     videoURL: "https://youtu.be/Ebhe84ClLGg?si=-A2UIAv0PwYNL8Gs",
+    type: SessionTypeEnum.PODCAST,
     isUpcoming,
   },
 
   // Upcoming sessions
-  {
-    title: "How to Freelance, Tips and Advices",
-    instructor: "-",
-    date: undefined,
-    time: undefined,
-    flyer: undefined,
-    videoURL: "https://www.youtube.com/@EverydayKarma",
-    isUpcoming: true,
-  },
+
   {
     title: "Roadmap on Software QA",
     instructor: "-",
