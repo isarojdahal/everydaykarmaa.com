@@ -17,4 +17,5 @@ export interface SessionType {
 export enum SessionTypeEnum {
   PODCAST = "PODCAST",
   WORKSHOP = "WORKSHOP",
+  INFO = "INFO",
 }

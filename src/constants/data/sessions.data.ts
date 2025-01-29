@@ -23,6 +23,7 @@ export default [
     time: undefined,
     flyer: ImageConstants.SESSIONS["2024"].GoLang,
     videoURL: "https://youtu.be/DVvspkGdxFo",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -32,6 +33,7 @@ export default [
     time: undefined,
     flyer: ImageConstants.SESSIONS["2024"].KubernetesSession,
     videoURL: "https://youtu.be/Aqy2qGTmC-U",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -41,6 +43,7 @@ export default [
     time: undefined,
     videoURL: "https://youtu.be/VLil1H4L6EE",
     flyer: ImageConstants.SESSIONS["2024"].AWSCertificationRoadmap,
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -50,6 +53,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].DataScienceRoadmap,
     videoURL: "https://youtu.be/tcMPE5ljELk",
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -61,6 +65,7 @@ export default [
     videoURL: "https://youtu.be/9TLkSx6LBGc",
     slidesURL: AssetsConstants.SESSIONS["2024"].ALMLRoadmap.slideURL,
     resourcesURL: AssetsConstants.SESSIONS["2024"].ALMLRoadmap.resourcesURL,
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -70,6 +75,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].DevOpsRoadmap,
     videoURL: "https://youtu.be/8BLP-nG2SQU",
+    type: SessionTypeEnum.INFO,
     isUpcoming,
   },
   {
@@ -79,6 +85,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].ExploringRust,
     videoURL: "https://youtu.be/qMBWu99emrs",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -88,6 +95,7 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].LearnLaravel,
     videoURL: "https://www.youtube.com/@EverydayKarma",
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -98,6 +106,7 @@ export default [
     flyer: ImageConstants.SESSIONS["2024"].WebSecurity,
     videoURL: "https://www.youtube.com/watch?v=28fgubfVgzY&t=2s",
     slidesURL: AssetsConstants.SESSIONS["2024"].WebSecurity.slideURL,
+    type: SessionTypeEnum.WORKSHOP,
     isUpcoming,
   },
   {
@@ -107,6 +116,8 @@ export default [
     time: "7pm onwards",
     flyer: ImageConstants.SESSIONS["2024"].CTF,
     videoURL: "https://www.youtube.com/watch?v=E_DLhzYg5uo",
+    type: SessionTypeEnum.WORKSHOP,
+
     isUpcoming,
   },
   {
