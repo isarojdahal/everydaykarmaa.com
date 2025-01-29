@@ -2,6 +2,7 @@ import {
   Calendar,
   Clock,
   FileText,
+  ImageIcon,
   SquarePlay,
   User,
   Video,
@@ -16,6 +17,13 @@ import {
 import { Button } from "@/ui/shadcn/button";
 import { Link } from "@tanstack/react-router";
 import Image from "../atoms/Image";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "../shadcn/dialog";
 
 export interface SessionType {
   title: string;
@@ -27,6 +35,7 @@ export interface SessionType {
   isUpcoming: boolean;
   slidesURL?: string;
   resourcesURL?: string;
+  images?: string[];
 }
 
 export function Assets({ ...session }: SessionType) {
@@ -101,6 +110,32 @@ export default function SessionCard({ session }: { session: SessionType }) {
             <Clock className="mr-2 h-4 w-4" />
             {session.time || "N/A"}
           </p>
+
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                className={`flex items-center ${session.images && "underline"}`}
+                disabled={Boolean(!session.images)}
+              >
+                <ImageIcon className="mr-2 h-4 w-4" />
+                {session.images ? "Session Images" : "N/A"}
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-h-[80vh] max-w-7xl overflow-auto">
+              <DialogTitle>{session.title}</DialogTitle>
+              <DialogDescription></DialogDescription>
+              <div className="flex flex-wrap items-start justify-center gap-6 py-8">
+                {session.images?.map((image, index) => (
+                  <div key={index} className="flex flex-col items-center gap-4">
+                    <div className="overflow-hidden rounded-md">
+                      <img src={image} alt={session.title} />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
+
           <Assets {...session} />
         </div>
       </CardContent>

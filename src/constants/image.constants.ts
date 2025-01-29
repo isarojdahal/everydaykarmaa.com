@@ -2,8 +2,13 @@ export class ImageConstants {
   private static readonly ASSET_BASE_URL = import.meta.env.VITE_ASSET_BASE_URL;
 
   public static readonly SESSIONS = {
-    2025: {},
+    2025: {
+      Journey_to_Microsoft: `${this.ASSET_BASE_URL}/images/sessions/flyers/Journey_to_Microsoft.png`,
+      Senior_Software_Engineer: `${this.ASSET_BASE_URL}/images/sessions/flyers/Senior_Software_Engineer.png`,
+    },
     2024: {
+      Web_3: `${this.ASSET_BASE_URL}/images/sessions/flyers/Web_3.0.png`,
+      Flutter_And_Freelance: `${this.ASSET_BASE_URL}/images/sessions/flyers/Flutter_And_Freelance.png`,
       INTERNSHIP_APPLE: `${this.ASSET_BASE_URL}/images/sessions/flyers/Internship_Experience_Apple.png`,
       CTF: `${this.ASSET_BASE_URL}/images/sessions/flyers/Capture_The_Flag.png`,
       WebSecurity: `${this.ASSET_BASE_URL}/images/sessions/flyers/Web_App_Security.png`,
@@ -19,16 +24,23 @@ export class ImageConstants {
     },
   };
 
-  public static readonly HERO_BG = `${this.ASSET_BASE_URL}/images/hero/hero-bg.jpg`;
+  public static readonly SESSIONS_SCREENSHOTS = {
+    2025: {},
+    2024: {
+      Web_3: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/1.webp`,
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Web_3.0/2.webp`,
+      ],
+      Flutter_And_Freelance: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Flutter_And_Freelance/1.webp`,
+      ],
+      INTERNSHIP_APPLE: [
+        `${this.ASSET_BASE_URL}/images/sessions-screenshots/Internship_Experience_Apple/1.webp`,
+      ],
+    },
+  };
 
-  // public static readonly TECH_LOGOS = {
-  //   HTML: `${this.ASSET_BASE_URL}/images/tech-logos/html.png`,
-  //   CSS: `${this.ASSET_BASE_URL}/images/tech-logos/css.png`,
-  //   JavaScript: `${this.ASSET_BASE_URL}/images/tech-logos/javascript.png`,
-  //   React: `${this.ASSET_BASE_URL}/images/tech-logos/react.png`,
-  //   SQL: `${this.ASSET_BASE_URL}/images/tech-logos/sql.png`,
-  //   Docker: `${this.ASSET_BASE_URL}/images/tech-logos/docker.png`,
-  // };
+  public static readonly HERO_BG = `${this.ASSET_BASE_URL}/images/hero/hero-bg.jpg`;
 
   public static readonly FEEDBACKS = {
     1: `${this.ASSET_BASE_URL}/images/feedbacks/feedback-01.png`,
