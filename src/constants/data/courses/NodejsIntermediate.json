@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "buyCourseLink": "https://forms.gle/Fcwvwi8BcNMF2gMN6"
+  },
+  "data": [
+    {
+      "title": "Intro to Node Syllabus + TypeScript intro",
+      "duration": "1hr 28min",
+      "videoURL": "https://youtu.be/R4iDvJcglbA"
+    },
+    {
+      "title": "TS Unions, Tuples, Arrays, Custom Types, Interfaces, Object Types, Function Types",
+      "duration": "1hr 8min",
+      "videoURL": "https://youtu.be/cpOmNhuVk_M"
+    },
+    {
+      "title": "TS Generics, Enums, Utility Types, static concept, TS setup in computer",
+      "duration": "1hr 19min",
+      "videoURL": "https://youtu.be/f93MtAQsW_M"
+    },
+    {
+      "title": "Node project setup with TS, Understanding @types, Node vs Bun vs Deno vs Cloudflare work",
+      "duration": "1hr 19min",
+      "videoURL": "https://youtu.be/t5snuDo_8Ec"
+    },
+    {
+      "title": "Concept of Network and its working && exploring net module of nodejs",
+      "duration": "1hr 9min",
+      "videoURL": "https://youtu.be/T12BO_uEXwc"
+    },
+    {
+      "title": "net vs http vs express && concept of statusCode and Request methods",
+      "duration": "1hr 2min",
+      "videoURL": "https://youtu.be/T12BO_uEXwc"
+    },
+    {
+      "title": "Into express frameworks, routes, middleware, its types, custom middleware and 3rd party",
+      "duration": "1hr 17min",
+      "videoURL": "https://youtu.be/Im_OdTK6h6w"
+    },
+    {
+      "title": "env variable, creating custom env parser, dotenv && Node project structure for Backend",
+      "videoURL": "https://youtu.be/6e0VNIrkDnM",
+      "duration": "1hr"
+    },
+    {
+      "title": "Understanding Database, ORMs",
+      "duration": "1hr 3min",
+      "videoURL": "https://youtu.be/-4Li5L64OW4"
+    },
+    {
+      "title": "Exploring postgres commands, datatypes, TypeORM setup and Entity Creation",
+      "duration": "1hr 10min",
+      "videoURL": "https://youtu.be/Gp48XuYC2ZA"
+    },
+    {
+      "title": "Understanding Decorators, Exploring Few Typeorm Decorators and Notion.so info for notes",
+      "duration": "1hr 10min",
+      "videoURL": "https://youtu.be/Gp48XuYC2ZA"
+    },
+    {
+      "title": "TypeORM column types, Entities, and exploring inbuilt functions for entities",
+      "duration": "50min",
+      "videoURL": "https://youtu.be/vJ2Jxz0unQg"
+    },
+    {
+      "title": "CRUD operation in TypeORM, Query Builders and working with JSON, arrays column types",
+      "duration": "1hr 35min",
+      "videoURL": "https://youtu.be/JoOYSiEMd2w"
+    },
+    {
+      "title": "Request Validation using ClassValidator and ClassTransformer",
+      "duration": "1hr 5min",
+      "videoURL": "https://youtu.be/qUpZ3qghktE"
+    },
+    {
+      "title": "Bug Fixes + Concept of Seedings with CLI and Picocolors",
+      "duration": "1hr 4min",
+      "videoURL": "https://youtu.be/mh1YRj4pyYc"
+    },
+    {
+      "title": "Triggers concept + Concept of Relationships in DB",
+      "duration": "1hr 11min",
+      "videoURL": "https://youtu.be/WxPmA60w9uk"
+    },
+    {
+      "title": "Relationship in TypeORM + Cascading Entities",
+      "duration": "1hr 6min",
+      "videoURL": "https://youtu.be/gG5zpmNnxkQ"
+    },
+    {
+      "title": "API Documentation using Swagger and Basics of Tsoa",
+      "duration": "1hr 6min",
+      "videoURL": "https://youtu.be/Jy43VSnpQxE"
+    },
+    {
+      "title": "More of Tsoa Middleware, Hidden, Deprecated, Custom errors and soon",
+      "duration": "1hr 6min",
+      "videoURL": "https://youtu.be/ofCEl1oxxEs"
+    },
+    {
+      "title": "Indepth concept of FTP, and going through 3rd party source code of file upload library",
+      "duration": "1hr 14min",
+      "videoURL": "https://youtu.be/bovQaLjh6n4"
+    },
+    {
+      "title": "More of multer, Media System Design and Creating custom uploadMiddleware",
+      "duration": "1hr 10min",
+      "videoURL": "https://youtu.be/QdO4f0cg_ys"
+    },
+    {
+      "title": "Wrapping up custom Multer Middleware + Remaining of Media workflow",
+      "duration": "1hr 17min",
+      "videoURL": "https://youtu.be/Dh2BBVD2QzQ"
+    },
+    {
+      "title": "Media with Tsoa, Postgres to MySQL setup and handling db column types",
+      "duration": "1hr 28min",
+      "videoURL": "https://youtu.be/tJNjexHH7Y4"
+    },
+    {
+      "title": "Logging using Winston && Concept of Pagination",
+      "duration": "1hr 10min",
+      "videoURL": "https://youtu.be/Ugkb6lyLSmc"
+    },
+    {
+      "title": " Pagianation in TypeORM Continued + Auth System Design and Workflow",
+      "duration": "1hr 9min",
+      "videoURL": "https://youtu.be/sBEHiIPFLms"
+    },
+    {
+      "title": "Auth Assignment review + Auth implementation from Tsoa",
+      "duration": "1hr 23min",
+      "videoURL": "https://youtu.be/D548z8RxuvA"
+    },
+    {
+      "title": " Into Redis, REST API vs  GraphQL vs  RPC concept",
+      "duration": "1hr 18min",
+      "videoURL": "https://youtu.be/i9vUIKuqBbA"
+    },
+    {
+      "title": "GraphQL in JavaScript Part 1",
+      "duration": "1hr",
+      "videoURL": "https://youtu.be/ErDZgsIo2x0",
+      "isFree": true
+    },
+    {
+      "title": "More of Graphql such as InputType, Mutation, Object and managing project structure",
+      "duration": "56 min",
+      "videoURL": "https://youtu.be/oYWtbIWBhhI"
+    },
+    {
+      "title": "GraphQL in TypeScript ; and adding Request Validators",
+      "duration": "1hr 28min",
+      "videoURL": "https://youtu.be/GxAZX9L3bHY"
+    },
+    {
+      "title": "GraphQL Media Upload and Bug Fixes",
+      "videoURL": "https://youtu.be/icFrQe3ye5c",
+      "duration": "1hr 10min"
+    },
+    {
+      "title": " More of GraphQL, Node Cluster, and more",
+      "videoURL": "https://youtu.be/3VvdIIL3xpU",
+      "duration": "42min"
+    }
+  ]
+}

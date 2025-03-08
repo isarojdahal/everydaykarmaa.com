@@ -29,7 +29,7 @@ const communityData: CommunityCardPropType[] = [
   },
   {
     title: "TikTok",
-    memberCount: "1.1K+",
+    memberCount: "1.8K+",
     icon: <FaTiktok className="size-20" />,
     url: "https://www.tiktok.com/@everyday.karma",
   },

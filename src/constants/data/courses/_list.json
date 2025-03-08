@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Intermediate Nodejs Course",
+    "description": "TypeScript, GraphQL, Swagger, Redis, TypeORM, and more.",
+    "price": 1500,
+    "isFree": false,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    "videoCount": 32,
+    "detailsUrl": "/courses/intermediate-nodejs"
+  },
+  {
+    "title": "Begineer JavaScript Course With Projects",
+    "description": "Learn JavaScript from scratch",
+    "price": 0,
+    "isFree": true,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "videoCount": 24,
+    "detailsUrl": "/courses/beginner-javascript"
+  },
+  {
+    "title": "Docker",
+    "description": "Concept of Volumes, Images,Containers, Networking, Docker Compose, Docker Hub, Dockerfile, and more.",
+    "price": 0,
+    "isFree": true,
+    "thumbnail": "https://www.docker.com/app/uploads/2023/05/symbol_blue-docker-logo.png",
+    "videoCount": 9,
+    "detailsUrl": "/courses/docker"
+  }
+]

@@ -3,6 +3,7 @@ import {
   FaFacebook,
   FaGithub,
   FaLinkedin,
+  FaTiktok,
   FaYoutube,
 } from "react-icons/fa6";
 import Logo from "../atoms/Logo";
@@ -13,6 +14,11 @@ const linksData = [
     title: "Youtube",
     icon: <FaYoutube className="~size-5/6" />,
     url: "https://www.youtube.com/@EverydayKarma",
+  },
+  {
+    title: "Tiktok",
+    icon: <FaTiktok className="~size-5/6" />,
+    url: "https://www.tiktok.com/@everyday.karma",
   },
   {
     title: "Discord",
