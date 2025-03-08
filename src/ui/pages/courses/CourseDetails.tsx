@@ -38,7 +38,7 @@ const CourseDetails = () => {
   console.log("courseData", courseData);
   // Filter videos based on search query
   const filteredVideos = searchQuery
-    ? courseData.data.filter((video) =>
+    ? courseData.data.filter((video: any) =>
         video.title.toLowerCase().includes(searchQuery.toLowerCase()),
       )
     : courseData.data;
@@ -93,7 +93,7 @@ const CourseDetails = () => {
           </div>
 
           <div className="divide-y">
-            {filteredVideos.map((video, videoIndex) => {
+            {filteredVideos.map((video: any, videoIndex: number) => {
               return (
                 <div className="flex flex-row justify-between items-center">
                   <Link

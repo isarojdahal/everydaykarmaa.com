@@ -1,6 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader } from "../shadcn/card";
 import { Button } from "../shadcn/button";
-import { Link } from "@tanstack/react-router";
 
 interface CourseCardProps {
   title: string;
@@ -48,7 +47,7 @@ export default function CourseCard({
       </CardContent>
       <CardFooter className="p-4 pt-0">
         <Button asChild className="w-full">
-          <Link href={detailsUrl}>View Details</Link>
+          <a href={detailsUrl}>View Details</a>
         </Button>
       </CardFooter>
     </Card>
