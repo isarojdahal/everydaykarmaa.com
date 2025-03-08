@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "buyCourseLink": null
+  },
+  "data": [
+    {
+      "title": "Introduction to Docker. Image vs Container",
+      "duration": "14min",
+      "videoURL": "https://youtu.be/Egfvjnl8pRo"
+    },
+    {
+      "title": "Understanding Dockerfile, Creating Images, DockerIgnore",
+      "duration": "1hr 19min",
+      "videoURL": "https://youtu.be/Y7iMP6dXTlw"
+    },
+    {
+      "title": "DockerHub, Pushing Image to DockerHub && Exploring Images",
+      "duration": "55min",
+      "videoURL": "https://youtu.be/dSCJJ6STBPA"
+    },
+    {
+      "title": "Docker Compose in Detail",
+      "duration": "1hr 8min",
+      "videoURL": "https://youtu.be/gWRR3L1Lgwc"
+    },
+    {
+      "title": "Docker Volumes in Detail",
+      "duration": "54min",
+      "videoURL": "https://youtu.be/c9mSB7mJWN4"
+    },
+    {
+      "title": "Layerings and Cachings in Docker",
+      "duration": "16min",
+      "videoURL": "https://youtu.be/CwxCjZ3_m2c"
+    },
+    {
+      "title": "Networking in Docker",
+      "duration": "30min",
+      "videoURL": "https://youtu.be/xjkipOwRF6E"
+    },
+    {
+      "title": "Dockerize Full stack MERN App",
+      "duration": "44min",
+      "videoURL": "https://youtu.be/fCHJnefqE1w"
+    },
+    {
+      "title": "Multi stage Builds",
+      "duration": "16min",
+      "videoURL": "https://youtu.be/KOzZHGhPqDs"
+    }
+  ]
+}

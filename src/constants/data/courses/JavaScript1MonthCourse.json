@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "buyCourseLink": null
+  },
+  "data": [
+    {
+      "title": "Introduction to JavaScript ,History, JS Engines, JS Programming Paradigms",
+      "duration": "1hr 6min",
+      "videoURL": "https://youtu.be/OAl6_9cSJ_E"
+    },
+    {
+      "title": "ECMAScript, Browser Rendering Process, Setting Environment for JS",
+      "duration": "50min",
+      "videoURL": "https://youtu.be/XfXTuPoFGPQ"
+    },
+    {
+      "title": "Comments,Variables,DataTypes, BigInt, Template Literals, +Weirdness of JS",
+      "duration": "1hr 14min",
+      "videoURL": "https://youtu.be/Xcg1gPaQk-s"
+    },
+    {
+      "title": "Nested and Tagged Templates, Async-Defer JS Load, and JS Operators",
+      "duration": "51min",
+      "videoURL": "https://youtu.be/Y067nIcH9jE"
+    },
+    {
+      "title": "JavaScripts Objects in Detail",
+      "duration": "1hr 3min",
+      "videoURL": "https://youtu.be/hrJGSU93LUo"
+    },
+    {
+      "title": "Spread Operators, Destructure Assignments,Arrays and its inbuilt functions",
+      "duration": "53min",
+      "videoURL": "https://youtu.be/98VjFWhtUK4"
+    },
+    {
+      "title": "For of, for in Loops, Constructor Function, Recursive Function, IIFE, Arrow Function",
+      "duration": "1hr 24min",
+      "videoURL": "https://youtu.be/PcFtGefsMks"
+    },
+    {
+      "title": "HOF, Exploring map(), sort(),reduce(),filter() and callback functions",
+      "duration": "1hr 38min",
+      "videoURL": "https://youtu.be/Qg-KmHAk40Y"
+    },
+    {
+      "title": "ES6 Modules,CommonJS, Console Object concepts of JavaScript",
+      "duration": "53min",
+      "videoURL": "https://youtu.be/ONBHcSJL70A"
+    },
+    {
+      "title": "Exploring window,document object in Detail and Understanding concept of DOM Manipulation",
+      "duration": "1hr 13min",
+      "videoURL": "https://youtu.be/3gopbuOaDNo"
+    },
+    {
+      "title": "Understanding Event Handlings, Mouse Event Handlings with Examples ",
+      "duration": "1hr 15min",
+      "videoURL": "https://youtu.be/Pw4nOjP8JUc"
+    },
+    {
+      "title": "Events Flow, ( Bubble Phase, Capture Phase), Event Delegation in Detail",
+      "duration": "1hr 3min",
+      "videoURL": "https://youtu.be/ErW2_1uEZq8"
+    },
+    {
+      "title": "Tic Tac Toe Game and ImageLight Box project using JavaScript",
+      "duration": "59min",
+      "videoURL": "https://youtu.be/-IGsG12ohX0"
+    },
+    {
+      "title": "Exploring Keyboard Events in JS , Working with Forms in JavaScript",
+      "duration": "1hr 26min",
+      "videoURL": "https://youtu.be/Yym-nt3CAIk"
+    },
+    {
+      "title": "Q/A Session on JavaScript and discussion on further course of JavaScript",
+      "duration": "46min",
+      "videoURL": "https://youtu.be/xnUdeo8JCUE"
+    },
+    {
+      "title": "Exploring window object events, Clipboard Event, Custom Events ",
+      "duration": "1hr 25min",
+      "videoURL": "https://youtu.be/EW0xQHvFNvY"
+    },
+    {
+      "title": "Exploring location, history,navigator object && Understanding Cookies, and LocalStorage",
+      "duration": "1hr 46min",
+      "videoURL": "https://youtu.be/U5hExm6lZts"
+    },
+    {
+      "title": "SessionStorage, Theme Changer Project && TodoList Project in JavaScript",
+      "duration": "1hr 4min",
+      "videoURL": "https://youtu.be/6cnXQ7p0tKE"
+    },
+    {
+      "title": "Playing Graphics in JavaScript using Canvas in Detail",
+      "duration": "1hr 24min",
+      "videoURL": "https://youtu.be/03g2gYw9_E0"
+    },
+    {
+      "title": "Understanding Concept of Third-party Libraries, Exploring JQuery.js in JavaScript",
+      "duration": "1hr 12min",
+      "videoURL": "https://youtu.be/COakr2ODfKc"
+    },
+    {
+      "title": "Exploring chart.js, aos.js && leaflet.js in Javascript",
+      "duration": "48min",
+      "videoURL": "https://youtu.be/HpTgIIxzxQg"
+    },
+    {
+      "title": "Exception Handling in JavaScript (try,catch,finally) and more of it in JavaScript",
+      "duration": "43min",
+      "videoURL": "https://youtu.be/I4OeAaN-gTw"
+    },
+    {
+      "title": "Regular Expression explained in Detail in JavaScript with Examples",
+      "duration": "1hr 25min",
+      "videoURL": "https://youtu.be/5UMFvbZxvuE"
+    },
+    {
+      "title": "Word Drop Game made using HTML,CSS and JavaScript",
+      "duration": "54min",
+      "videoURL": "https://youtu.be/W3N6_sT8bqM"
+    }
+  ]
+}

@@ -21,6 +21,8 @@ const OpensourceLazyImport = createFileRoute("/opensource")();
 const FeedbackLazyImport = createFileRoute("/feedback")();
 const AboutusLazyImport = createFileRoute("/aboutus")();
 const IndexLazyImport = createFileRoute("/")();
+const CoursesIndexLazyImport = createFileRoute("/courses/")();
+const CoursesSlugLazyImport = createFileRoute("/courses/$slug")();
 
 // Create/Update Routes
 
@@ -53,6 +55,22 @@ const IndexLazyRoute = IndexLazyImport.update({
   path: "/",
   getParentRoute: () => rootRoute,
 } as any).lazy(() => import("./routes/index.lazy").then((d) => d.Route));
+
+const CoursesIndexLazyRoute = CoursesIndexLazyImport.update({
+  id: "/courses/",
+  path: "/courses/",
+  getParentRoute: () => rootRoute,
+} as any).lazy(() =>
+  import("./routes/courses/index.lazy").then((d) => d.Route),
+);
+
+const CoursesSlugLazyRoute = CoursesSlugLazyImport.update({
+  id: "/courses/$slug",
+  path: "/courses/$slug",
+  getParentRoute: () => rootRoute,
+} as any).lazy(() =>
+  import("./routes/courses/$slug.lazy").then((d) => d.Route),
+);
 
 // Populate the FileRoutesByPath interface
 
@@ -93,6 +111,20 @@ declare module "@tanstack/react-router" {
       preLoaderRoute: typeof SessionsLazyImport;
       parentRoute: typeof rootRoute;
     };
+    "/courses/$slug": {
+      id: "/courses/$slug";
+      path: "/courses/$slug";
+      fullPath: "/courses/$slug";
+      preLoaderRoute: typeof CoursesSlugLazyImport;
+      parentRoute: typeof rootRoute;
+    };
+    "/courses/": {
+      id: "/courses/";
+      path: "/courses";
+      fullPath: "/courses";
+      preLoaderRoute: typeof CoursesIndexLazyImport;
+      parentRoute: typeof rootRoute;
+    };
   }
 }
 
@@ -104,6 +136,8 @@ export interface FileRoutesByFullPath {
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
+  "/courses/$slug": typeof CoursesSlugLazyRoute;
+  "/courses": typeof CoursesIndexLazyRoute;
 }
 
 export interface FileRoutesByTo {
@@ -112,6 +146,8 @@ export interface FileRoutesByTo {
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
+  "/courses/$slug": typeof CoursesSlugLazyRoute;
+  "/courses": typeof CoursesIndexLazyRoute;
 }
 
 export interface FileRoutesById {
@@ -121,14 +157,38 @@ export interface FileRoutesById {
   "/feedback": typeof FeedbackLazyRoute;
   "/opensource": typeof OpensourceLazyRoute;
   "/sessions": typeof SessionsLazyRoute;
+  "/courses/$slug": typeof CoursesSlugLazyRoute;
+  "/courses/": typeof CoursesIndexLazyRoute;
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath;
-  fullPaths: "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
+  fullPaths:
+    | "/"
+    | "/aboutus"
+    | "/feedback"
+    | "/opensource"
+    | "/sessions"
+    | "/courses/$slug"
+    | "/courses";
   fileRoutesByTo: FileRoutesByTo;
-  to: "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
-  id: "__root__" | "/" | "/aboutus" | "/feedback" | "/opensource" | "/sessions";
+  to:
+    | "/"
+    | "/aboutus"
+    | "/feedback"
+    | "/opensource"
+    | "/sessions"
+    | "/courses/$slug"
+    | "/courses";
+  id:
+    | "__root__"
+    | "/"
+    | "/aboutus"
+    | "/feedback"
+    | "/opensource"
+    | "/sessions"
+    | "/courses/$slug"
+    | "/courses/";
   fileRoutesById: FileRoutesById;
 }
 
@@ -138,6 +198,8 @@ export interface RootRouteChildren {
   FeedbackLazyRoute: typeof FeedbackLazyRoute;
   OpensourceLazyRoute: typeof OpensourceLazyRoute;
   SessionsLazyRoute: typeof SessionsLazyRoute;
+  CoursesSlugLazyRoute: typeof CoursesSlugLazyRoute;
+  CoursesIndexLazyRoute: typeof CoursesIndexLazyRoute;
 }
 
 const rootRouteChildren: RootRouteChildren = {
@@ -146,6 +208,8 @@ const rootRouteChildren: RootRouteChildren = {
   FeedbackLazyRoute: FeedbackLazyRoute,
   OpensourceLazyRoute: OpensourceLazyRoute,
   SessionsLazyRoute: SessionsLazyRoute,
+  CoursesSlugLazyRoute: CoursesSlugLazyRoute,
+  CoursesIndexLazyRoute: CoursesIndexLazyRoute,
 };
 
 export const routeTree = rootRoute
@@ -162,7 +226,9 @@ export const routeTree = rootRoute
         "/aboutus",
         "/feedback",
         "/opensource",
-        "/sessions"
+        "/sessions",
+        "/courses/$slug",
+        "/courses/"
       ]
     },
     "/": {
@@ -179,6 +245,12 @@ export const routeTree = rootRoute
     },
     "/sessions": {
       "filePath": "sessions.lazy.tsx"
+    },
+    "/courses/$slug": {
+      "filePath": "courses/$slug.lazy.tsx"
+    },
+    "/courses/": {
+      "filePath": "courses/index.lazy.tsx"
     }
   }
 }

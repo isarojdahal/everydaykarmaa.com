@@ -9,6 +9,10 @@ export default function Header() {
       title: "Home",
     },
     {
+      to: "/courses",
+      title: "Courses",
+    },
+    {
       to: "/sessions",
       title: "Sessions",
     },
