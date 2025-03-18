@@ -31,6 +31,11 @@ const CourseDetails = () => {
           setCourseData(res.default);
         });
         break;
+
+      case "typeorm":
+        import("@/constants/data/courses/TypeORMCourse.json").then((res) => {
+          setCourseData(res.default);
+        });
     }
   }, [courseData]);
 

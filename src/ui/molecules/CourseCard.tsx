@@ -24,8 +24,8 @@ export default function CourseCard({
         <img
           src={thumbnail || "/placeholder.svg"}
           alt={title}
-          className="object-cover transition-transform hover:scale-105"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className=" object-fill transition-transform hover:scale-105"
+          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <CardHeader className="p-4">
