@@ -25,5 +25,14 @@
     "thumbnail": "https://www.docker.com/app/uploads/2023/05/symbol_blue-docker-logo.png",
     "videoCount": 9,
     "detailsUrl": "/courses/docker"
+  },
+  {
+    "title": "TypeORM",
+    "description": "Relations, Cascadings, Triggers, JSON-Array Fields, Transactions Explained",
+    "price": 0,
+    "isFree": true,
+    "thumbnail": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F6fjs6w4uiqbpxts6zckh.png",
+    "videoCount": 10,
+    "detailsUrl": "/courses/typeorm"
   }
 ]

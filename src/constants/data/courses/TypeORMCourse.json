@@ -1,0 +1,57 @@
+{
+  "meta": {
+    "buyCourseLink": null
+  },
+  "data": [
+    {
+      "title": "Understanding ORM and Introduction to TypeORM with its installation",
+      "duration": "40min 30sec",
+      "videoURL": "https://youtu.be/vRPpuWJKyuk?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "Understanding Decorators and Creating First Entity in TypeORM",
+      "duration": "40min 16sec",
+      "videoURL": "https://youtu.be/lwi7ZuOXX3M?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "TypeORM Decorators (Entity, Column, PrimaryGeneratedColumn)",
+      "duration": "28min 47sec",
+      "videoURL": "https://youtu.be/a7eO7grjmjM?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "CRUD Operations in Node using TypeORM",
+      "duration": "40min 20sec",
+      "videoURL": "https://youtu.be/jfRgNJgbL14?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "CreatedAt, DeletedAt, UpdatedAt, Upsert, and Soft vs Hard Delete",
+      "duration": "26min 06sec",
+      "videoURL": "https://youtu.be/-NaWV5lx2ec?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "QueryBuilder, Custom Query and Aggregate Functions",
+      "duration": "33min 21sec",
+      "videoURL": "https://youtu.be/s9WHPlGsbKs?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "Concept of Relationships in Database and One-to-One Relationship in ORM",
+      "duration": "35min 02sec",
+      "videoURL": "https://youtu.be/6g36SwYgUqg?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "One To Many/Many To One, Many to Many Relationships + Cascadings",
+      "duration": "39min 03sec",
+      "videoURL": "https://youtu.be/GlOJpY0GtHA?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "Triggers, Caching and Seedings in TypeORM",
+      "duration": "41min 55sec",
+      "videoURL": "https://youtu.be/4uvi3JApJpQ?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    },
+    {
+      "title": "JSON, Enum,Arrays Types in Database, Working with Mongodb using TypeORM",
+      "duration": "45min 58sec",
+      "videoURL": "https://youtu.be/xAJ8UbVPPCs?list=PL4njvVBDLL222kLQQlsqSJ-a_2jG5j4yq"
+    }
+  ]
+}
